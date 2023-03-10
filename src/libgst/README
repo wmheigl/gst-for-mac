@@ -1,0 +1,17 @@
+README For Sources
+==================
+
+The source files in this directory can be categorized as follows:
+
+C Interface:    callin.c callin.h cint.c, cint.h
+
+Byte Code Generation:   byte.c, byte.h, byte.def
+
+Compiler:   comp.c, comp.h, comp.inl
+
+Interpreter:    interp.c, interp.h
+
+Lexer/Parser: lex.c, lex.h, gst-parse.c, gst-parse.h
+
+Virtual Machine:
+

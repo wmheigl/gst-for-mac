@@ -1,0 +1,10 @@
+print("src/apps/SConscript...")
+
+Import('env')
+
+libraries = [
+    'aux',  'gst',  'gmp',  'ffi',  'ltdl', 'snprintfv',
+    'sigsegv', 'poll'
+]
+env.Program('gst', 'main.c', LIBS=libraries)
+env.Program('gst-tool', 'gst-tool.c', LIBS=libraries)

@@ -1,0 +1,12 @@
+print("src/libaux/SConscript")
+
+Import('env')
+
+sources = [
+    'avltrees.c',   'inet_ntop.c',      'lock.c',       'md5.c',
+    'obstack.c',    'pointer-set.c',    'rbtrees.c',    'regex.c',
+    'socketx.c',    'strspell.c'
+]
+
+env.StaticLibrary('libaux', sources)
+

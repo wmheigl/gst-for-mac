@@ -1,0 +1,17 @@
+README For Installing
+---------------------
+
+Required:           scons 4.4, python 3.11, XCode CommandLine Tools
+
+Gnu Dependencies:   sigsegv, gmp, ltdl
+                    install from source in /usr/local/src
+                    using Gnu autotools (./configure, make, sudo make install)
+
+To build:           scons -c && scons >build.log 2>error.log
+
+To test:            ./build/src/apps/gst -h
+                    ./build/src/apps/gst --kernel-dir "./kernel"
+
+To build image:     ./build/src/apps/gst --kernel-dir "./kernel" --image gst.im -iQ /dev/null
+
+To test:            ./build/src/apps/gst -I gst.im

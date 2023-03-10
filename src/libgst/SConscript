@@ -1,0 +1,21 @@
+print("src/libgst/SConscript")
+
+Import('env')
+
+sources = [
+    'gstpub.c',   'files.c',    'gst-parse.c',    'lex.c',
+    'str.c',      'tree.c',     'byte.c',         'comp.c',
+    'sym.c',      'dict.c',     'oop.c',          'opt.c',
+    'save.c',     'cint.c',     'heap.c',         'input.c',
+    'sysdep.c',   'callin.c',   'xlat.c',         'mpz.c',
+    'print.c',    'alloc.c',    're.c',           'interp.c',
+    'real.c',     'sockets.c',  'events.c'
+]
+
+libraries = [
+    'aux', 'snprintfv', 'lightning', 'sigsegv', 'ffi', 'ltdl',
+    'gmp', 'readline'
+]
+
+env.StaticLibrary('libgst', sources, LIBS=libraries)
+

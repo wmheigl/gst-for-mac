@@ -1,0 +1,271 @@
+Terminals which are not used
+
+   "BEGIN"
+   "END"
+   "break"
+   "continue"
+   "dispatch"
+   "extract"
+   ".."
+   "number"
+
+
+Grammar
+
+    0 $accept: program $end
+
+    1 program: program matcher
+    2        | /* empty */
+
+    3 @1: /* empty */
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" ',' '(' @1 cases ')' ')'
+
+    5 cases: case
+
+    6 @2: /* empty */
+
+    7 cases: cases @2 case
+
+    8 case: ids "expression"
+
+    9 ids: ids ',' id
+   10    | id
+
+   11 id: "identifier"
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'(' (40) 4
+')' (41) 4
+',' (44) 4 9
+error (256)
+"MATCH_BYTECODES" (258) 4
+"BEGIN" (259)
+"END" (260)
+"break" (261)
+"continue" (262)
+"dispatch" (263)
+"extract" (264)
+".." (265)
+"number" (266)
+"identifier" (267) 4 11
+"expression" (268) 8
+
+
+Nonterminals, with rules where they appear
+
+$accept (17)
+    on left: 0
+program (18)
+    on left: 1 2, on right: 0 1
+matcher (19)
+    on left: 4, on right: 1
+@1 (20)
+    on left: 3, on right: 4
+cases (21)
+    on left: 5 7, on right: 4 7
+@2 (22)
+    on left: 6, on right: 7
+case (23)
+    on left: 8, on right: 5 7
+ids (24)
+    on left: 9 10, on right: 8 9
+id (25)
+    on left: 11, on right: 9 10
+
+
+state 0
+
+    0 $accept: . program $end
+
+    $default  reduce using rule 2 (program)
+
+    program  go to state 1
+
+
+state 1
+
+    0 $accept: program . $end
+    1 program: program . matcher
+
+    $end               shift, and go to state 2
+    "MATCH_BYTECODES"  shift, and go to state 3
+
+    matcher  go to state 4
+
+
+state 2
+
+    0 $accept: program $end .
+
+    $default  accept
+
+
+state 3
+
+    4 matcher: "MATCH_BYTECODES" . '(' "identifier" ',' "identifier" ',' '(' @1 cases ')' ')'
+
+    '('  shift, and go to state 5
+
+
+state 4
+
+    1 program: program matcher .
+
+    $default  reduce using rule 1 (program)
+
+
+state 5
+
+    4 matcher: "MATCH_BYTECODES" '(' . "identifier" ',' "identifier" ',' '(' @1 cases ')' ')'
+
+    "identifier"  shift, and go to state 6
+
+
+state 6
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" . ',' "identifier" ',' '(' @1 cases ')' ')'
+
+    ','  shift, and go to state 7
+
+
+state 7
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' . "identifier" ',' '(' @1 cases ')' ')'
+
+    "identifier"  shift, and go to state 8
+
+
+state 8
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" . ',' '(' @1 cases ')' ')'
+
+    ','  shift, and go to state 9
+
+
+state 9
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" ',' . '(' @1 cases ')' ')'
+
+    '('  shift, and go to state 10
+
+
+state 10
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" ',' '(' . @1 cases ')' ')'
+
+    $default  reduce using rule 3 (@1)
+
+    @1  go to state 11
+
+
+state 11
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" ',' '(' @1 . cases ')' ')'
+
+    "identifier"  shift, and go to state 12
+
+    cases  go to state 13
+    case   go to state 14
+    ids    go to state 15
+    id     go to state 16
+
+
+state 12
+
+   11 id: "identifier" .
+
+    $default  reduce using rule 11 (id)
+
+
+state 13
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" ',' '(' @1 cases . ')' ')'
+    7 cases: cases . @2 case
+
+    ')'  shift, and go to state 17
+
+    $default  reduce using rule 6 (@2)
+
+    @2  go to state 18
+
+
+state 14
+
+    5 cases: case .
+
+    $default  reduce using rule 5 (cases)
+
+
+state 15
+
+    8 case: ids . "expression"
+    9 ids: ids . ',' id
+
+    "expression"  shift, and go to state 19
+    ','           shift, and go to state 20
+
+
+state 16
+
+   10 ids: id .
+
+    $default  reduce using rule 10 (ids)
+
+
+state 17
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" ',' '(' @1 cases ')' . ')'
+
+    ')'  shift, and go to state 21
+
+
+state 18
+
+    7 cases: cases @2 . case
+
+    "identifier"  shift, and go to state 12
+
+    case  go to state 22
+    ids   go to state 15
+    id    go to state 16
+
+
+state 19
+
+    8 case: ids "expression" .
+
+    $default  reduce using rule 8 (case)
+
+
+state 20
+
+    9 ids: ids ',' . id
+
+    "identifier"  shift, and go to state 12
+
+    id  go to state 23
+
+
+state 21
+
+    4 matcher: "MATCH_BYTECODES" '(' "identifier" ',' "identifier" ',' '(' @1 cases ')' ')' .
+
+    $default  reduce using rule 4 (matcher)
+
+
+state 22
+
+    7 cases: cases @2 case .
+
+    $default  reduce using rule 7 (cases)
+
+
+state 23
+
+    9 ids: ids ',' id .
+
+    $default  reduce using rule 9 (ids)

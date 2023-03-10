@@ -1,0 +1,44 @@
+{
+  scanning_grey_pages_is_conservative
+  Memcheck:Cond
+  fun: scan_grey_pages
+  fun: copy_oops
+}
+
+{
+  uninitialized_context_stack_slots_written_to_image
+  Memcheck:Param
+  write(buf)
+  obj: *libc-*.so
+  fun: buffer_write
+}
+
+#########
+
+{
+  probing_unmapped_areas
+  Memcheck:Param
+  access(pathname)
+  obj: *libc-*.so
+  fun: _gst_heap_create
+}
+
+{
+  probing_unmapped_areas_2
+  Memcheck:Param
+  access(pathname)
+  obj: *libc-*.so
+  fun: find_heap_base
+}
+
+{
+  probing_unmapped_areas_3
+  Memcheck:Addr4
+  fun: _gst_heap_create
+}
+
+{
+  probing_unmapped_areas_4
+  Memcheck:Addr4
+  fun: find_heap_base
+}

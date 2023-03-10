@@ -1,0 +1,7 @@
+print("src/SConscript")
+Import('env')
+
+SConscript('snprintfv/SConscript', exports='env')
+SConscript('libaux/SConscript', exports='env')
+SConscript('libgst/SConscript', exports='env')
+SConscript('apps/SConscript', exports='env')
