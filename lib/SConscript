@@ -1,0 +1,4 @@
+print("lib/SConscript")
+Import('env')
+
+SConscript('snprintfv/SConscript', exports='env')

@@ -47,13 +47,14 @@ env = conf.Finish()
 env.Append(LIBS=['ffi', 'pthread', 'readline'])
 
 # add project directories with header files
-env.Append(CPPPATH=['#src', '#src/libaux', '#src/libgst', '#src/snprintfv', '#src/superops'])
+env.Append(CPPPATH=['#src', '#src/libaux', '#src/libgst', '#lib/snprintfv', '#src/superops'])
 
 # add project libraries
 env.Append(LIBS=['gst', 'aux', 'snprintfv'])
-env.Append(LIBPATH=['#build/src/libgst', '#build/src/libaux', '#build/src/snprintfv'])
+env.Append(LIBPATH=['#build/src/libgst', '#build/src/libaux', '#build/lib/snprintfv'])
 
 # print(env.Dump())
 
+SConscript('lib/SConscript', variant_dir='build/lib', exports='env')
 SConscript('src/SConscript', variant_dir='build/src', exports='env')
 

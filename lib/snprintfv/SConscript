@@ -1,0 +1,11 @@
+print("lib/snprintfv/SConscript")
+
+Import('env')
+
+sources = [
+    'filament.c',   'format.c',      'printf.c',       'mem.c',
+    'stream.c',     'custom.c'
+]
+
+env.StaticLibrary('libsnprintfv', sources)
+
