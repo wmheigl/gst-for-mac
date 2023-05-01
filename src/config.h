@@ -38,7 +38,7 @@
 #define EXEC_PREFIX "/usr/local/bin"
 
 /* Define default executable name. */
-#define DEFAULT_EXECUTABLE "mst"
+#define DEFAULT_EXECUTABLE "gst"
 
 /* Define to the extension for executable files. */
 #define EXEEXT ""
@@ -204,7 +204,7 @@
 #define HAVE_GMP 1
 
 /* Define to 1 if gnutls is being used */
-#define HAVE_GNUTLS 1
+#define HAVE_GNUTLS 0
 
 /* Define if your CC has the '&&' and 'goto void *' GCC extensions. */
 #define HAVE_GOTO_VOID_P 1
@@ -252,7 +252,7 @@
 #define HAVE_LIBEXPAT 1
 
 /* Define to 1 if you have the `gnutls' library (-lgnutls). */
-#define HAVE_LIBGNUTLS 1
+#define HAVE_LIBGNUTLS 0
 
 /* Define to 1 if you have the `libffi' library (-llibffi). */
 #define HAVE_LIBLIBFFI 1

@@ -1,0 +1,35 @@
+scons: Reading SConscript files ...
+Checking for C library sigsegv... (cached) yes
+Checking for C library gmp... (cached) yes
+Checking for C library ltdl... (cached) yes
+src/SConscript
+src/snprintfv/SConscript
+src/libaux/SConscript
+src/libgst/SConscript
+src/apps/SConscript...
+scons: done reading SConscript files.
+scons: Building targets ...
+gcc -o build/src/apps/main.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/apps/main.c
+gcc -o build/src/libaux/avltrees.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/avltrees.c
+gcc -o build/src/libaux/inet_ntop.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/inet_ntop.c
+gcc -o build/src/libaux/lock.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/lock.c
+gcc -o build/src/libaux/md5.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/md5.c
+gcc -o build/src/libaux/obstack.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/obstack.c
+gcc -o build/src/libaux/pointer-set.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/pointer-set.c
+gcc -o build/src/libaux/rbtrees.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/rbtrees.c
+gcc -o build/src/libaux/regex.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/regex.c
+gcc -o build/src/libaux/socketx.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/socketx.c
+gcc -o build/src/libaux/strspell.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libaux/strspell.c
+ar rc build/src/libaux/libaux.a build/src/libaux/avltrees.o build/src/libaux/inet_ntop.o build/src/libaux/lock.o build/src/libaux/md5.o build/src/libaux/obstack.o build/src/libaux/pointer-set.o build/src/libaux/rbtrees.o build/src/libaux/regex.o build/src/libaux/socketx.o build/src/libaux/strspell.o
+ranlib build/src/libaux/libaux.a
+gcc -o build/src/libgst/gstpub.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/gstpub.c
+gcc -o build/src/libgst/files.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/files.c
+gcc -o build/src/libgst/gst-parse.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/gst-parse.c
+gcc -o build/src/libgst/lex.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/lex.c
+gcc -o build/src/libgst/str.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/str.c
+gcc -o build/src/libgst/tree.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/tree.c
+gcc -o build/src/libgst/byte.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/byte.c
+gcc -o build/src/libgst/comp.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/comp.c
+gcc -o build/src/libgst/sym.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/sym.c
+gcc -o build/src/libgst/dict.o -c -Isrc -Isrc/libaux -Isrc/libgst -Isrc/snprintfv -Isrc/util/superops build/src/libgst/dict.c
+scons: building terminated because of errors.
