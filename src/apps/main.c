@@ -330,7 +330,7 @@ parse_args (int argc, const char **argv)
     }
 }
 
-    int
+int
 main(int argc, const char **argv)
 {
     int result;

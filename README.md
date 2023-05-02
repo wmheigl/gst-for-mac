@@ -1,5 +1,5 @@
 # gst-for-mac
-Gnu Smalltalk for Mac
+GNU Smalltalk for Mac
 
 Uses SCONS as the build tool.
 

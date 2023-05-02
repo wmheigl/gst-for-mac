@@ -315,9 +315,7 @@ _gst_smalltalk_args (int argc,
 
    
 int
-_gst_initialize (const char *kernel_dir,
-		 const char *image_file,
-		 int flags)
+_gst_initialize (const char *kernel_dir, const char *image_file, int flags)
 {
   char *currentDirectory = _gst_get_cur_dir_name ();
   const char *home = getenv ("HOME");
@@ -475,23 +473,22 @@ _gst_initialize (const char *kernel_dir,
   else
     {
       loadBinary = (rebuild_image_flags == GST_MAYBE_REBUILD_IMAGE
-		    && ok_to_load_binary ());
+		            && ok_to_load_binary ());
       abortOnFailure = false;
 
       /* If we must create a new non-local image, but the directory is
          not writeable, we must resort to the current directory.  In
          practice this is what happens when a "normal user" puts stuff in
-	 his ".st" directory or does "gst -i".  */
+	     his ".st" directory or does "gst -i".  */
 
-      if (!loadBinary
-          && !_gst_file_is_writeable (_gst_image_file_path)
-	  && (flags & GST_IGNORE_BAD_IMAGE_PATH))
+      if (!loadBinary && !_gst_file_is_writeable (_gst_image_file_path)
+	                  && (flags & GST_IGNORE_BAD_IMAGE_PATH))
         {
           _gst_image_file_path = _gst_get_cur_dir_name ();
           asprintf (&str, "%s/gst.im", _gst_image_file_path);
-	  _gst_binary_image_name = str;
+          _gst_binary_image_name = str;
           loadBinary = (rebuild_image_flags == GST_MAYBE_REBUILD_IMAGE
-		        && ok_to_load_binary ());
+		                && ok_to_load_binary ());
         }
     }
 
@@ -522,14 +519,15 @@ _gst_initialize (const char *kernel_dir,
       result = load_standard_files ();
       _gst_regression_testing = willRegressTest;
       if (result)
-	return result;
+        return result;
 
       if (!_gst_save_to_file (_gst_binary_image_name))
-	_gst_errorf ("Couldn't open file %s", _gst_binary_image_name);
+        _gst_errorf ("Couldn't open file %s", _gst_binary_image_name);
     }
 
   _gst_kernel_initialized = true;
   _gst_invoke_hook (GST_RETURN_FROM_SNAPSHOT);
+
   if (user_init_file)
     _gst_process_file (user_init_file, GST_DIR_ABS);
 
