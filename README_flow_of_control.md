@@ -34,9 +34,9 @@ Call `gst_initialize(kernel_dir, image_file, flags)` in gstpub.c.
     - If ok to load image file:
         - Call `_gst_init_interpreter()` in interp.c
         - Call `_gst_init_vmproxy()` in callin.c
-      ElseIf abortOnFailure 
+    - ElseIf abortOnFailure 
         - abort
-      Else
+    - Else
         - Call `_gst_init_oop_table()` in oop.c 
         - Call `_gst_init_mem_default()` in oop.c
         - Call `_gst_init_dictionary()` in dict.c
