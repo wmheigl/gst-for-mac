@@ -43,15 +43,8 @@ if not conf.CheckLibWithHeader('ltdl', 'ltdl.h', language='c'):
 
 env = conf.Finish()
 
-# add the libraries that ship with OSX or come with command line tools:
-env.Append(LIBS=['ffi', 'pthread', 'readline'])
-
-# add project directories with header files
-env.Append(CPPPATH=['#src', '#src/libaux', '#src/libgst', '#lib/snprintfv', '#src/superops'])
-
-# add project libraries
-env.Append(LIBS=['gst', 'aux', 'snprintfv'])
-env.Append(LIBPATH=['#build/src/libgst', '#build/src/libaux', '#build/lib/snprintfv'])
+#env.Append(CPPPATH=['/opt/local/include'])
+#env.Append(LIBPATH=['/opt/local/lib'])
 
 # print(env.Dump())
 

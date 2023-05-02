@@ -14,8 +14,12 @@ sources = [
 
 libraries = [
     'aux', 'snprintfv', 'lightning', 'sigsegv', 'ffi', 'ltdl',
-    'gmp', 'readline'
+    'gmp', 'readline', 'pthread'
 ]
+
+env.Append(CPPPATH=['#src', '#src/libaux', '#src/libgst', '#lib/snprintfv', '#src/superops'])
+
+env.Append(LIBPATH=['#build/src/libgst', '#build/src/libaux', '#build/lib/snprintfv'])
 
 env.StaticLibrary('libgst', sources, LIBS=libraries)
 
