@@ -32,19 +32,19 @@ Call `gst_initialize(kernel_dir, image_file, flags)` in gstpub.c.
     - Sets some global variables in case of regression testing
     - Checks if image needs to be rebuilt
     - If ok to load image file:
-        Call `_gst_init_interpreter()` in interp.c
-        Call `_gst_init_vmproxy()` in callin.c
+        - Call `_gst_init_interpreter()` in interp.c
+        - Call `_gst_init_vmproxy()` in callin.c
       ElseIf abortOnFailure 
-        abort
+        - abort
       Else
-        Call `_gst_init_oop_table()` in oop.c 
-        Call `_gst_init_mem_default()` in oop.c
-        Call `_gst_init_dictionary()` in dict.c
-        Call `_gst_init_interpreter()` in interp.c
-        Call `_gst_init_vmproxy()` in callin.c
-        Call `_gst_install_initial_methods()` in comp.c
-        Call `load_standard_files()` in files.c
-        Option: Call `_gst_save_to_file()`
+        - Call `_gst_init_oop_table()` in oop.c 
+        - Call `_gst_init_mem_default()` in oop.c
+        - Call `_gst_init_dictionary()` in dict.c
+        - Call `_gst_init_interpreter()` in interp.c
+        - Call `_gst_init_vmproxy()` in callin.c
+        - Call `_gst_install_initial_methods()` in comp.c
+        - Call `load_standard_files()` in files.c
+        - Option: Call `_gst_save_to_file()`
     - kernel is initialized now
     - Call `_gst_invoke_hook()` in comp.c
     - Optional user init file: Call `_gst_process_file()` in input.c

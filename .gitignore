@@ -6,3 +6,4 @@ config.log
 .sconf_temp
 
 build/
+.README_flow_of_control.md.swp
