@@ -2,4 +2,3 @@ print("lib/SConscript")
 Import('env')
 
 SConscript('snprintfv/SConscript', exports='env')
-SConscript('liblogc/SConscript', exports='env')

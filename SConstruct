@@ -53,11 +53,11 @@ env = conf.Finish()
 # add libraries that ship with MacOSX SDK
 env.Append(LIBS=['ffi', 'pthread', 'poll'])
 
-# add 3rd party libraries
-env.Append(LIBS=['gmp', 'ltdl', 'sigsegv'])
+# add 3rd party libraries, already handled in env.Configure
+#env.Append(LIBS=['gmp', 'ltdl', 'sigsegv'])
 
 # add project directories with header files
-env.Append(CPPPATH=['#src', '#src/libaux', '#src/libgst', '#lib/logc', '#src/snprintfv', '#src/util/superops'])
+env.Append(CPPPATH=['#src', '#src/libaux', '#src/libgst', '#src/snprintfv', '#src/util/superops', '#lib/logc/include'])
 
 # add project libraries
 env.Append(LIBS=['aux', 'gst', 'snprintfv'])

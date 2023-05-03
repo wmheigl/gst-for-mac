@@ -60,7 +60,10 @@
 
 #include "config.h"
 #include "gstpub.h"
-#include "log.h"
+
+#define LOGC_IMPLEMENTATION
+#define LOGC_USE_COLOR
+#include "logc.h"
 
 static const char help_text[] =
 "GNU Smalltalk usage:"
