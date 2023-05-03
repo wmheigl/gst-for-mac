@@ -1,0 +1,13 @@
+print("test/SConscript...")
+
+Import('env')
+
+env.Append(CPPPATH=['#test', '#test/munit', '#test/libgst'])
+
+test_sources = [
+    'munit/munit.c', 'test.c',
+    'libgst/test_gstpub.c'
+]
+
+#libraries = ['gst', 'ffi', 'gmp', 'pthread', 'snprintfv']
+env.Program('testrunner', test_sources)

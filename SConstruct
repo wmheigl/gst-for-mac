@@ -43,11 +43,30 @@ if not conf.CheckLibWithHeader('ltdl', 'ltdl.h', language='c'):
 
 env = conf.Finish()
 
+########################################################################
+# Libraries
+########################################################################
+
 #env.Append(CPPPATH=['/opt/local/include'])
 #env.Append(LIBPATH=['/opt/local/lib'])
 
+# add libraries that ship with MacOSX SDK
+env.Append(LIBS=['ffi', 'pthread', 'poll'])
+
+# add 3rd party libraries
+env.Append(LIBS=['gmp', 'ltdl', 'sigsegv'])
+
+# add project directories with header files
+env.Append(CPPPATH=['#src', '#src/libaux', '#src/libgst', '#lib/logc', '#src/snprintfv', '#src/util/superops'])
+
+# add project libraries
+env.Append(LIBS=['aux', 'gst', 'snprintfv'])
+env.Append(LIBPATH=['#build/src/libgst', '#build/src/libaux', '#build/src/snprintfv'])
+
 # print(env.Dump())
 
+# build executables
 SConscript('lib/SConscript', variant_dir='build/lib', exports='env')
 SConscript('src/SConscript', variant_dir='build/src', exports='env')
+SConscript('test/SConscript', variant_dir='build/test', exports='env')
 

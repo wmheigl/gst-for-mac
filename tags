@@ -871,14 +871,6 @@ ETAGS	src/libgst/Makefile	/^ETAGS = etags$/;"	m
 ETAGS	src/libgst/Makefile.in	/^ETAGS = etags$/;"	m
 EVENT_LOOP_POLL_INTERVAL	build/src/libgst/events.c	/^#define EVENT_LOOP_POLL_INTERVAL	/;"	d	file:
 EVENT_LOOP_POLL_INTERVAL	src/libgst/events.c	/^#define EVENT_LOOP_POLL_INTERVAL	/;"	d	file:
-EV_EVENT	build/src/libgst/sysdep/win32/events.c	/^  EV_EVENT$/;"	e	enum:fhev_kind	file:
-EV_EVENT	src/libgst/sysdep/win32/events.c	/^  EV_EVENT$/;"	e	enum:fhev_kind	file:
-EV_PASSIVE_SOCKET	build/src/libgst/sysdep/win32/events.c	/^  EV_PASSIVE_SOCKET,$/;"	e	enum:fhev_kind	file:
-EV_PASSIVE_SOCKET	src/libgst/sysdep/win32/events.c	/^  EV_PASSIVE_SOCKET,$/;"	e	enum:fhev_kind	file:
-EV_SOCKET	build/src/libgst/sysdep/win32/events.c	/^  EV_SOCKET,$/;"	e	enum:fhev_kind	file:
-EV_SOCKET	src/libgst/sysdep/win32/events.c	/^  EV_SOCKET,$/;"	e	enum:fhev_kind	file:
-EV_TTY	build/src/libgst/sysdep/win32/events.c	/^  EV_TTY,$/;"	e	enum:fhev_kind	file:
-EV_TTY	src/libgst/sysdep/win32/events.c	/^  EV_TTY,$/;"	e	enum:fhev_kind	file:
 EXECUTE	build/src/libgst/save.c	/^#define EXECUTE /;"	d	file:
 EXECUTE	src/libgst/save.c	/^#define EXECUTE /;"	d	file:
 EXEC_PREFIX	src/config.h	/^#define EXEC_PREFIX /;"	d
@@ -1086,6 +1078,7 @@ Filament	build/lib/snprintfv/filament.h	/^typedef struct filament Filament;$/;"	
 Filament	build/src/snprintfv/filament.h	/^typedef struct filament Filament;$/;"	t	typeref:struct:filament
 Filament	lib/snprintfv/filament.h	/^typedef struct filament Filament;$/;"	t	typeref:struct:filament
 Filament	src/snprintfv/filament.h	/^typedef struct filament Filament;$/;"	t	typeref:struct:filament
+Flow of Control in 'main.c'	README_flow_of_control.md	/^# Flow of Control in 'main.c'$/;"	c
 GC_DEBUGGING	build/src/libgst/oop.c	/^#define GC_DEBUGGING$/;"	d	file:
 GC_DEBUGGING	src/libgst/oop.c	/^#define GC_DEBUGGING$/;"	d	file:
 GETADDRINFO_H	src/libaux/getaddrinfo.h	/^#define GETADDRINFO_H$/;"	d
@@ -1964,9 +1957,7 @@ MANIFEST_TOOL	src/libgst/Makefile.in	/^MANIFEST_TOOL = @MANIFEST_TOOL@$/;"	m
 MAP_ANON	build/src/libgst/sysdep/posix/mem.c	/^# define MAP_ANON MAP_ANONY/;"	d	file:
 MAP_ANON	src/libgst/sysdep/posix/mem.c	/^# define MAP_ANON MAP_ANONY/;"	d	file:
 MAP_FAILED	build/src/libgst/sysdep/posix/mem.c	/^# define MAP_FAILED /;"	d	file:
-MAP_FAILED	build/src/libgst/sysdep/win32/mem.c	/^# define MAP_FAILED /;"	d	file:
 MAP_FAILED	src/libgst/sysdep/posix/mem.c	/^# define MAP_FAILED /;"	d	file:
-MAP_FAILED	src/libgst/sysdep/win32/mem.c	/^# define MAP_FAILED /;"	d	file:
 MAP_NORESERVE	build/src/libgst/sysdep/posix/mem.c	/^# define MAP_NORESERVE /;"	d	file:
 MAP_NORESERVE	src/libgst/sysdep/posix/mem.c	/^# define MAP_NORESERVE /;"	d	file:
 MASK_ENDIANNESS_FLAG	build/src/libgst/save.c	/^#define MASK_ENDIANNESS_FLAG /;"	d	file:
@@ -2150,8 +2141,6 @@ MTH_USER_DEFINED	build/src/libgst/comp.h	/^#define MTH_USER_DEFINED	/;"	d
 MTH_USER_DEFINED	src/libgst/comp.h	/^#define MTH_USER_DEFINED	/;"	d
 Makefile	src/libgst/Makefile	/^Makefile: $(srcdir)\/Makefile.in $(top_builddir)\/config.status$/;"	t
 Makefile	src/libgst/Makefile.in	/^Makefile: $(srcdir)\/Makefile.in $(top_builddir)\/config.status$/;"	t
-NAMED_PIPE_PREFIX	build/src/libgst/sysdep/win32/files.c	/^#define NAMED_PIPE_PREFIX /;"	d	file:
-NAMED_PIPE_PREFIX	src/libgst/sysdep/win32/files.c	/^#define NAMED_PIPE_PREFIX /;"	d	file:
 NAMESPACE_AT_PUT	build/src/libgst/dict.inl	/^#define NAMESPACE_AT_PUT(/;"	d	file:
 NAMESPACE_AT_PUT	src/libgst/dict.inl	/^#define NAMESPACE_AT_PUT(/;"	d	file:
 NAN	build/src/libgst/callin.c	/^#define NAN /;"	d	file:
@@ -2760,25 +2749,15 @@ PUSH_SPECIAL	src/libgst/byte.h	/^  PUSH_SPECIAL = 45,$/;"	e	enum:__anon92ecb43a0
 PUSH_TEMPORARY_VARIABLE	build/src/libgst/byte.h	/^  PUSH_TEMPORARY_VARIABLE = 32,$/;"	e	enum:__anon848082b90103
 PUSH_TEMPORARY_VARIABLE	src/libgst/byte.h	/^  PUSH_TEMPORARY_VARIABLE = 32,$/;"	e	enum:__anon92ecb43a0103
 P_DETACH	build/src/libgst/sysdep/posix/files.c	/^#define P_DETACH /;"	d	file:
-P_DETACH	build/src/libgst/sysdep/win32/files.c	/^#define P_DETACH /;"	d	file:
 P_DETACH	src/libgst/sysdep/posix/files.c	/^#define P_DETACH /;"	d	file:
-P_DETACH	src/libgst/sysdep/win32/files.c	/^#define P_DETACH /;"	d	file:
 P_NOWAIT	build/src/libgst/sysdep/posix/files.c	/^#define P_NOWAIT /;"	d	file:
-P_NOWAIT	build/src/libgst/sysdep/win32/files.c	/^#define P_NOWAIT /;"	d	file:
 P_NOWAIT	src/libgst/sysdep/posix/files.c	/^#define P_NOWAIT /;"	d	file:
-P_NOWAIT	src/libgst/sysdep/win32/files.c	/^#define P_NOWAIT /;"	d	file:
 P_NOWAITO	build/src/libgst/sysdep/posix/files.c	/^#define P_NOWAITO /;"	d	file:
-P_NOWAITO	build/src/libgst/sysdep/win32/files.c	/^#define P_NOWAITO /;"	d	file:
 P_NOWAITO	src/libgst/sysdep/posix/files.c	/^#define P_NOWAITO /;"	d	file:
-P_NOWAITO	src/libgst/sysdep/win32/files.c	/^#define P_NOWAITO /;"	d	file:
 P_OVERLAY	build/src/libgst/sysdep/posix/files.c	/^#define P_OVERLAY /;"	d	file:
-P_OVERLAY	build/src/libgst/sysdep/win32/files.c	/^#define P_OVERLAY /;"	d	file:
 P_OVERLAY	src/libgst/sysdep/posix/files.c	/^#define P_OVERLAY /;"	d	file:
-P_OVERLAY	src/libgst/sysdep/win32/files.c	/^#define P_OVERLAY /;"	d	file:
 P_WAIT	build/src/libgst/sysdep/posix/files.c	/^#define P_WAIT /;"	d	file:
-P_WAIT	build/src/libgst/sysdep/win32/files.c	/^#define P_WAIT /;"	d	file:
 P_WAIT	src/libgst/sysdep/posix/files.c	/^#define P_WAIT /;"	d	file:
-P_WAIT	src/libgst/sysdep/win32/files.c	/^#define P_WAIT /;"	d	file:
 PositionIterator	src/superops/positions.h	/^class PositionIterator$/;"	c
 PositionIterator	src/util/superops/positions.h	/^class PositionIterator$/;"	c
 PositionReverseIterator	src/superops/positions.h	/^class PositionReverseIterator$/;"	c
@@ -3928,20 +3907,6 @@ WHITE_SPACE	build/src/libgst/lex.c	/^#define WHITE_SPACE	/;"	d	file:
 WHITE_SPACE	src/libgst/lex.c	/^#define WHITE_SPACE	/;"	d	file:
 WIN32	build/src/libgst/gst.h	/^#define WIN32 /;"	d
 WIN32	src/libgst/gst.h	/^#define WIN32 /;"	d
-WIN32_LEAN_AND_MEAN	build/src/libgst/sysdep/cygwin/findexec.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	build/src/libgst/sysdep/cygwin/timer.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	build/src/libgst/sysdep/win32/files.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	build/src/libgst/sysdep/win32/findexec.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	build/src/libgst/sysdep/win32/mem.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	build/src/libgst/sysdep/win32/time.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	build/src/libgst/sysdep/win32/timer.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	src/libgst/sysdep/cygwin/findexec.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	src/libgst/sysdep/cygwin/timer.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	src/libgst/sysdep/win32/files.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	src/libgst/sysdep/win32/findexec.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	src/libgst/sysdep/win32/mem.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	src/libgst/sysdep/win32/time.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
-WIN32_LEAN_AND_MEAN	src/libgst/sysdep/win32/timer.c	/^# define WIN32_LEAN_AND_MEAN /;"	d	file:
 WIN32_NATIVE	src/libaux/getaddrinfo.c	/^# define WIN32_NATIVE$/;"	d	file:
 WINDRES	src/libgst/Makefile	/^WINDRES = no$/;"	m
 WINDRES	src/libgst/Makefile.in	/^WINDRES = @WINDRES@$/;"	m
@@ -3961,8 +3926,7 @@ WSPACE	src/libgst/genpr-parse.h	/^#define WSPACE /;"	d
 WSPACE	src/libgst/genpr-parse.y	/^%token LITERAL WSPACE$/;"	t
 W_OK	build/src/libgst/sysdep/common/files.c	/^#define W_OK /;"	d	file:
 W_OK	src/libgst/sysdep/common/files.c	/^#define W_OK /;"	d	file:
-WaitForMultipleObjectsDispatchMsg	build/src/libgst/sysdep/win32/events.c	/^WaitForMultipleObjectsDispatchMsg (int nhandles, HANDLE *handles,$/;"	f	typeref:typename:unsigned	file:
-WaitForMultipleObjectsDispatchMsg	src/libgst/sysdep/win32/events.c	/^WaitForMultipleObjectsDispatchMsg (int nhandles, HANDLE *handles,$/;"	f	typeref:typename:unsigned	file:
+What happens in 'main.c'?	README_flow_of_control.md	/^## What happens in 'main.c'?$/;"	s	chapter:Flow of Control in 'main.c'
 XMKMF	src/libgst/Makefile	/^XMKMF = $/;"	m
 XMKMF	src/libgst/Makefile.in	/^XMKMF = @XMKMF@$/;"	m
 XZIP	src/libgst/Makefile	/^XZIP = \/usr\/bin\/zip$/;"	m
@@ -4509,7 +4473,6 @@ __anon1cd6b9ce0708	build/src/libaux/lock.h	/^        {$/;"	s
 __anon1cd6b9ce0808	build/src/libaux/lock.h	/^        {$/;"	s
 __anon1cd6b9ce0908	build/src/libaux/lock.h	/^        {$/;"	s
 __anon1cd6b9ce0a08	build/src/libaux/lock.h	/^        {$/;"	s
-__anon1d8279890108	src/libgst/sysdep/cygwin/timer.c	/^{$/;"	s	file:
 __anon281c52b80103	src/libgst/interp.h	/^{$/;"	g
 __anon2b42eb4f0108	src/libaux/lock.h	/^        {$/;"	s
 __anon2b42eb4f0208	src/libaux/lock.h	/^        {$/;"	s
@@ -4551,7 +4514,6 @@ __anon79232cfc0108	build/src/libgst/mpz.h	/^{$/;"	s
 __anon799478190108	build/src/libgst/sym.c	/^{$/;"	s	file:
 __anon7994781e0103	build/src/libgst/sym.h	/^{$/;"	g
 __anon7a7d97910103	src/util/superops/byte_def.h	/^enum {$/;"	g
-__anon818e52280108	build/src/libgst/sysdep/cygwin/timer.c	/^{$/;"	s	file:
 __anon848082b90103	build/src/libgst/byte.h	/^enum {$/;"	g
 __anon848082b90203	build/src/libgst/byte.h	/^enum {$/;"	g
 __anon84ab80b1010a	src/libgst/alloc.h	/^  union {$/;"	u	struct:heap_block
@@ -4704,9 +4666,7 @@ _gst_async_call	src/libgst/interp.c	/^_gst_async_call (void (*func) (OOP), OOP a
 _gst_async_call_internal	build/src/libgst/interp.c	/^_gst_async_call_internal (async_queue_entry *e)$/;"	f	typeref:typename:void
 _gst_async_call_internal	src/libgst/interp.c	/^_gst_async_call_internal (async_queue_entry *e)$/;"	f	typeref:typename:void
 _gst_async_file_polling	build/src/libgst/sysdep/posix/events.c	/^_gst_async_file_polling (int fd,$/;"	f	typeref:typename:int
-_gst_async_file_polling	build/src/libgst/sysdep/win32/events.c	/^_gst_async_file_polling (int fd,$/;"	f	typeref:typename:int
 _gst_async_file_polling	src/libgst/sysdep/posix/events.c	/^_gst_async_file_polling (int fd,$/;"	f	typeref:typename:int
-_gst_async_file_polling	src/libgst/sysdep/win32/events.c	/^_gst_async_file_polling (int fd,$/;"	f	typeref:typename:int
 _gst_async_interrupt_wait	build/src/libgst/events.c	/^_gst_async_interrupt_wait (OOP semaphoreOOP,$/;"	f	typeref:typename:void
 _gst_async_interrupt_wait	src/libgst/events.c	/^_gst_async_interrupt_wait (OOP semaphoreOOP,$/;"	f	typeref:typename:void
 _gst_async_signal	build/src/libgst/interp.c	/^_gst_async_signal (OOP semaphoreOOP)$/;"	f	typeref:typename:void
@@ -4714,9 +4674,7 @@ _gst_async_signal	src/libgst/interp.c	/^_gst_async_signal (OOP semaphoreOOP)$/;"
 _gst_async_signal_and_unregister	build/src/libgst/interp.c	/^_gst_async_signal_and_unregister (OOP semaphoreOOP)$/;"	f	typeref:typename:void
 _gst_async_signal_and_unregister	src/libgst/interp.c	/^_gst_async_signal_and_unregister (OOP semaphoreOOP)$/;"	f	typeref:typename:void
 _gst_async_timed_wait	build/src/libgst/sysdep/posix/events.c	/^_gst_async_timed_wait (OOP semaphoreOOP,$/;"	f	typeref:typename:void
-_gst_async_timed_wait	build/src/libgst/sysdep/win32/events.c	/^_gst_async_timed_wait (OOP semaphoreOOP,$/;"	f	typeref:typename:void
 _gst_async_timed_wait	src/libgst/sysdep/posix/events.c	/^_gst_async_timed_wait (OOP semaphoreOOP,$/;"	f	typeref:typename:void
-_gst_async_timed_wait	src/libgst/sysdep/win32/events.c	/^_gst_async_timed_wait (OOP semaphoreOOP,$/;"	f	typeref:typename:void
 _gst_bad_return_error_symbol	build/src/libgst/sym.c	/^OOP _gst_bad_return_error_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_bad_return_error_symbol	src/libgst/sym.c	/^OOP _gst_bad_return_error_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_basic_size	build/src/libgst/callin.c	/^_gst_basic_size (OOP oop)$/;"	f	typeref:typename:int
@@ -5389,9 +5347,7 @@ _gst_current_parser	src/libgst/gst-parse.c	/^gst_parser *_gst_current_parser;$/;
 _gst_current_time_zone_bias	build/src/libgst/sysdep/common/time.c	/^_gst_current_time_zone_bias (void)$/;"	f	typeref:typename:long
 _gst_current_time_zone_bias	src/libgst/sysdep/common/time.c	/^_gst_current_time_zone_bias (void)$/;"	f	typeref:typename:long
 _gst_current_time_zone_name	build/src/libgst/sysdep/posix/time.c	/^_gst_current_time_zone_name (void)$/;"	f	typeref:typename:char *
-_gst_current_time_zone_name	build/src/libgst/sysdep/win32/time.c	/^_gst_current_time_zone_name (void)$/;"	f	typeref:typename:char *
 _gst_current_time_zone_name	src/libgst/sysdep/posix/time.c	/^_gst_current_time_zone_name (void)$/;"	f	typeref:typename:char *
-_gst_current_time_zone_name	src/libgst/sysdep/win32/time.c	/^_gst_current_time_zone_name (void)$/;"	f	typeref:typename:char *
 _gst_date_class	build/src/libgst/dict.c	/^OOP _gst_date_class = NULL;$/;"	v	typeref:typename:OOP
 _gst_date_class	src/libgst/dict.c	/^OOP _gst_date_class = NULL;$/;"	v	typeref:typename:OOP
 _gst_debug	build/src/libgst/sysdep/common/files.c	/^_gst_debug (void)$/;"	f	typeref:typename:void
@@ -5425,9 +5381,7 @@ _gst_directed_message_class	src/libgst/dict.c	/^OOP _gst_directed_message_class 
 _gst_disable_completion	build/src/libgst/input.c	/^_gst_disable_completion (void)$/;"	f	typeref:typename:void
 _gst_disable_completion	src/libgst/input.c	/^_gst_disable_completion (void)$/;"	f	typeref:typename:void
 _gst_disable_interrupts	build/src/libgst/sysdep/posix/signals.c	/^_gst_disable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
-_gst_disable_interrupts	build/src/libgst/sysdep/win32/signals.c	/^_gst_disable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
 _gst_disable_interrupts	src/libgst/sysdep/posix/signals.c	/^_gst_disable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
-_gst_disable_interrupts	src/libgst/sysdep/win32/signals.c	/^_gst_disable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
 _gst_discard_native_code	build/src/libgst/xlat.c	/^_gst_discard_native_code (OOP methodOOP)$/;"	f	typeref:typename:void
 _gst_discard_native_code	src/libgst/xlat.c	/^_gst_discard_native_code (OOP methodOOP)$/;"	f	typeref:typename:void
 _gst_dispatch_events	build/src/libgst/events.c	/^_gst_dispatch_events (void)$/;"	f	typeref:typename:void
@@ -5463,9 +5417,7 @@ _gst_empty_context_pool	src/libgst/interp.c	/^_gst_empty_context_pool (void)$/;"
 _gst_enable_completion	build/src/libgst/input.c	/^_gst_enable_completion (void)$/;"	f	typeref:typename:void
 _gst_enable_completion	src/libgst/input.c	/^_gst_enable_completion (void)$/;"	f	typeref:typename:void
 _gst_enable_interrupts	build/src/libgst/sysdep/posix/signals.c	/^_gst_enable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
-_gst_enable_interrupts	build/src/libgst/sysdep/win32/signals.c	/^_gst_enable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
 _gst_enable_interrupts	src/libgst/sysdep/posix/signals.c	/^_gst_enable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
-_gst_enable_interrupts	src/libgst/sysdep/win32/signals.c	/^_gst_enable_interrupts (mst_Boolean from_signal_handler)$/;"	f	typeref:typename:void
 _gst_errno	build/src/libgst/cint.c	/^int _gst_errno = 0;$/;"	v	typeref:typename:int
 _gst_errno	src/libgst/cint.c	/^int _gst_errno = 0;$/;"	v	typeref:typename:int
 _gst_error_recovery	build/src/libgst/lex.c	/^mst_Boolean _gst_error_recovery = false;$/;"	v	typeref:typename:mst_Boolean
@@ -5480,12 +5432,8 @@ _gst_eval_expr	build/src/libgst/callin.c	/^_gst_eval_expr (const char *str)$/;"	
 _gst_eval_expr	src/libgst/callin.c	/^_gst_eval_expr (const char *str)$/;"	f	typeref:typename:OOP
 _gst_except_flag	build/src/libgst/interp.c	/^mst_Boolean _gst_except_flag = false;$/;"	v	typeref:typename:mst_Boolean
 _gst_except_flag	src/libgst/interp.c	/^mst_Boolean _gst_except_flag = false;$/;"	v	typeref:typename:mst_Boolean
-_gst_executable_path	build/src/libgst/sysdep/cygwin/findexec.c	/^const char *_gst_executable_path = NULL;$/;"	v	typeref:typename:const char *
 _gst_executable_path	build/src/libgst/sysdep/posix/findexec.c	/^const char *_gst_executable_path = NULL;$/;"	v	typeref:typename:const char *
-_gst_executable_path	build/src/libgst/sysdep/win32/findexec.c	/^const char *_gst_executable_path = NULL;$/;"	v	typeref:typename:const char *
-_gst_executable_path	src/libgst/sysdep/cygwin/findexec.c	/^const char *_gst_executable_path = NULL;$/;"	v	typeref:typename:const char *
 _gst_executable_path	src/libgst/sysdep/posix/findexec.c	/^const char *_gst_executable_path = NULL;$/;"	v	typeref:typename:const char *
-_gst_executable_path	src/libgst/sysdep/win32/findexec.c	/^const char *_gst_executable_path = NULL;$/;"	v	typeref:typename:const char *
 _gst_execute_statements	build/src/libgst/comp.c	/^_gst_execute_statements (OOP receiverOOP,$/;"	f	typeref:typename:OOP
 _gst_execute_statements	src/libgst/comp.c	/^_gst_execute_statements (OOP receiverOOP,$/;"	f	typeref:typename:OOP
 _gst_execution_tracing	build/src/libgst/interp.c	/^int _gst_execution_tracing = 0;$/;"	v	typeref:typename:int
@@ -5589,13 +5537,9 @@ _gst_get_cur_stream_type	src/libgst/input.c	/^_gst_get_cur_stream_type (void)$/;
 _gst_get_current_namespace	build/src/libgst/gst-parse.c	/^_gst_get_current_namespace (void)$/;"	f	typeref:typename:OOP
 _gst_get_current_namespace	src/libgst/gst-parse.c	/^_gst_get_current_namespace (void)$/;"	f	typeref:typename:OOP
 _gst_get_fd_error	build/src/libgst/sysdep/posix/events.c	/^_gst_get_fd_error (int fd)$/;"	f	typeref:typename:int
-_gst_get_fd_error	build/src/libgst/sysdep/win32/events.c	/^_gst_get_fd_error (int fd)$/;"	f	typeref:typename:int
 _gst_get_fd_error	src/libgst/sysdep/posix/events.c	/^_gst_get_fd_error (int fd)$/;"	f	typeref:typename:int
-_gst_get_fd_error	src/libgst/sysdep/win32/events.c	/^_gst_get_fd_error (int fd)$/;"	f	typeref:typename:int
 _gst_get_full_file_name	build/src/libgst/sysdep/posix/files.c	/^_gst_get_full_file_name (const char *name)$/;"	f	typeref:typename:char *
-_gst_get_full_file_name	build/src/libgst/sysdep/win32/files.c	/^_gst_get_full_file_name (const char *name)$/;"	f	typeref:typename:char *
 _gst_get_full_file_name	src/libgst/sysdep/posix/files.c	/^_gst_get_full_file_name (const char *name)$/;"	f	typeref:typename:char *
-_gst_get_full_file_name	src/libgst/sysdep/win32/files.c	/^_gst_get_full_file_name (const char *name)$/;"	f	typeref:typename:char *
 _gst_get_location	build/src/libgst/input.c	/^_gst_get_location (void)$/;"	f	typeref:typename:YYLTYPE
 _gst_get_location	src/libgst/input.c	/^_gst_get_location (void)$/;"	f	typeref:typename:YYLTYPE
 _gst_get_milli_time	build/src/libgst/sysdep/common/time.c	/^_gst_get_milli_time (void)$/;"	f	typeref:typename:uint64_t
@@ -5603,9 +5547,7 @@ _gst_get_milli_time	src/libgst/sysdep/common/time.c	/^_gst_get_milli_time (void)
 _gst_get_native_code	build/src/libgst/xlat.c	/^_gst_get_native_code (OOP methodOOP, OOP receiverClass)$/;"	f	typeref:typename:PTR
 _gst_get_native_code	src/libgst/xlat.c	/^_gst_get_native_code (OOP methodOOP, OOP receiverClass)$/;"	f	typeref:typename:PTR
 _gst_get_ns_time	build/src/libgst/sysdep/posix/time.c	/^_gst_get_ns_time (void)$/;"	f	typeref:typename:uint64_t
-_gst_get_ns_time	build/src/libgst/sysdep/win32/time.c	/^_gst_get_ns_time (void)$/;"	f	typeref:typename:uint64_t
 _gst_get_ns_time	src/libgst/sysdep/posix/time.c	/^_gst_get_ns_time (void)$/;"	f	typeref:typename:uint64_t
-_gst_get_ns_time	src/libgst/sysdep/win32/time.c	/^_gst_get_ns_time (void)$/;"	f	typeref:typename:uint64_t
 _gst_get_object_class	build/src/libgst/callin.c	/^_gst_get_object_class (OOP oop)$/;"	f	typeref:typename:OOP
 _gst_get_object_class	src/libgst/callin.c	/^_gst_get_object_class (OOP oop)$/;"	f	typeref:typename:OOP
 _gst_get_primitive_attributes	build/src/libgst/interp.c	/^_gst_get_primitive_attributes (int primitive)$/;"	f	typeref:typename:prim_table_entry *
@@ -5686,9 +5628,7 @@ _gst_inc_init_registry	src/libgst/oop.c	/^_gst_inc_init_registry (void)$/;"	f	ty
 _gst_incremental_gc_step	build/src/libgst/oop.c	/^_gst_incremental_gc_step ()$/;"	f	typeref:typename:mst_Boolean
 _gst_incremental_gc_step	src/libgst/oop.c	/^_gst_incremental_gc_step ()$/;"	f	typeref:typename:mst_Boolean
 _gst_init_async_events	build/src/libgst/sysdep/posix/events.c	/^_gst_init_async_events (void)$/;"	f	typeref:typename:void
-_gst_init_async_events	build/src/libgst/sysdep/win32/events.c	/^_gst_init_async_events (void)$/;"	f	typeref:typename:void
 _gst_init_async_events	src/libgst/sysdep/posix/events.c	/^_gst_init_async_events (void)$/;"	f	typeref:typename:void
-_gst_init_async_events	src/libgst/sysdep/win32/events.c	/^_gst_init_async_events (void)$/;"	f	typeref:typename:void
 _gst_init_builtin_objects_classes	build/src/libgst/oop.c	/^_gst_init_builtin_objects_classes (void)$/;"	f	typeref:typename:void
 _gst_init_builtin_objects_classes	src/libgst/oop.c	/^_gst_init_builtin_objects_classes (void)$/;"	f	typeref:typename:void
 _gst_init_cfuncs	build/src/libgst/cint.c	/^_gst_init_cfuncs (void)$/;"	f	typeref:typename:void
@@ -5723,18 +5663,14 @@ _gst_init_symbols_pass2	build/src/libgst/sym.c	/^_gst_init_symbols_pass2 (void)$
 _gst_init_symbols_pass2	src/libgst/sym.c	/^_gst_init_symbols_pass2 (void)$/;"	f	typeref:typename:void
 _gst_init_sysdep	build/src/libgst/sysdep/common/files.c	/^_gst_init_sysdep (void)$/;"	f	typeref:typename:void
 _gst_init_sysdep	src/libgst/sysdep/common/files.c	/^_gst_init_sysdep (void)$/;"	f	typeref:typename:void
-_gst_init_sysdep_timer	build/src/libgst/sysdep/cygwin/timer.c	/^_gst_init_sysdep_timer (void)$/;"	f	typeref:typename:void
 _gst_init_sysdep_timer	build/src/libgst/sysdep/posix/timer.c	/^_gst_init_sysdep_timer (void)$/;"	f	typeref:typename:void
-_gst_init_sysdep_timer	build/src/libgst/sysdep/win32/timer.c	/^_gst_init_sysdep_timer (void)$/;"	f	typeref:typename:void
-_gst_init_sysdep_timer	src/libgst/sysdep/cygwin/timer.c	/^_gst_init_sysdep_timer (void)$/;"	f	typeref:typename:void
 _gst_init_sysdep_timer	src/libgst/sysdep/posix/timer.c	/^_gst_init_sysdep_timer (void)$/;"	f	typeref:typename:void
-_gst_init_sysdep_timer	src/libgst/sysdep/win32/timer.c	/^_gst_init_sysdep_timer (void)$/;"	f	typeref:typename:void
 _gst_init_translator	build/src/libgst/xlat.c	/^_gst_init_translator (void)$/;"	f	typeref:typename:void
 _gst_init_translator	src/libgst/xlat.c	/^_gst_init_translator (void)$/;"	f	typeref:typename:void
 _gst_init_vmproxy	build/src/libgst/callin.c	/^_gst_init_vmproxy (void)$/;"	f	typeref:typename:void
 _gst_init_vmproxy	src/libgst/callin.c	/^_gst_init_vmproxy (void)$/;"	f	typeref:typename:void
-_gst_initialize	build/src/libgst/files.c	/^_gst_initialize (const char *kernel_dir,$/;"	f	typeref:typename:int
-_gst_initialize	src/libgst/files.c	/^_gst_initialize (const char *kernel_dir,$/;"	f	typeref:typename:int
+_gst_initialize	build/src/libgst/files.c	/^_gst_initialize (const char *kernel_dir, const char *image_file, int flags)$/;"	f	typeref:typename:int
+_gst_initialize	src/libgst/files.c	/^_gst_initialize (const char *kernel_dir, const char *image_file, int flags)$/;"	f	typeref:typename:int
 _gst_initialize_readline	build/src/libgst/input.c	/^_gst_initialize_readline (void)$/;"	f	typeref:typename:void
 _gst_initialize_readline	src/libgst/input.c	/^_gst_initialize_readline (void)$/;"	f	typeref:typename:void
 _gst_initialize_symbol	build/src/libgst/sym.c	/^OOP _gst_initialize_symbol = NULL;$/;"	v	typeref:typename:OOP
@@ -5780,9 +5716,7 @@ _gst_is_pipe	src/libgst/sysdep/common/files.c	/^_gst_is_pipe (int fd)$/;"	f	type
 _gst_is_simple_return	build/src/libgst/opt.c	/^_gst_is_simple_return (bc_vector bytecodes,$/;"	f	typeref:typename:int
 _gst_is_simple_return	src/libgst/opt.c	/^_gst_is_simple_return (bc_vector bytecodes,$/;"	f	typeref:typename:int
 _gst_is_timeout_programmed	build/src/libgst/sysdep/posix/events.c	/^_gst_is_timeout_programmed (void)$/;"	f	typeref:typename:mst_Boolean
-_gst_is_timeout_programmed	build/src/libgst/sysdep/win32/events.c	/^_gst_is_timeout_programmed (void)$/;"	f	typeref:typename:mst_Boolean
 _gst_is_timeout_programmed	src/libgst/sysdep/posix/events.c	/^_gst_is_timeout_programmed (void)$/;"	f	typeref:typename:mst_Boolean
-_gst_is_timeout_programmed	src/libgst/sysdep/win32/events.c	/^_gst_is_timeout_programmed (void)$/;"	f	typeref:typename:mst_Boolean
 _gst_iterable_class	build/src/libgst/dict.c	/^OOP _gst_iterable_class = NULL;$/;"	v	typeref:typename:OOP
 _gst_iterable_class	src/libgst/dict.c	/^OOP _gst_iterable_class = NULL;$/;"	v	typeref:typename:OOP
 _gst_kernel_file_path	build/src/libgst/files.c	/^const char *_gst_kernel_file_path = NULL;$/;"	v	typeref:typename:const char *
@@ -5927,9 +5861,7 @@ _gst_mem_free	src/libgst/alloc.c	/^_gst_mem_free (heap_data *h, void *mem)$/;"	f
 _gst_mem_new_heap	build/src/libgst/alloc.c	/^_gst_mem_new_heap (size_t heap_allocation_size, size_t heap_limit)$/;"	f	typeref:typename:heap_data *
 _gst_mem_new_heap	src/libgst/alloc.c	/^_gst_mem_new_heap (size_t heap_allocation_size, size_t heap_limit)$/;"	f	typeref:typename:heap_data *
 _gst_mem_protect	build/src/libgst/sysdep/posix/mem.c	/^_gst_mem_protect (PTR addr, size_t len, int prot)$/;"	f	typeref:typename:int
-_gst_mem_protect	build/src/libgst/sysdep/win32/mem.c	/^_gst_mem_protect (PTR addr, size_t len, int prot)$/;"	f	typeref:typename:int
 _gst_mem_protect	src/libgst/sysdep/posix/mem.c	/^_gst_mem_protect (PTR addr, size_t len, int prot)$/;"	f	typeref:typename:int
-_gst_mem_protect	src/libgst/sysdep/win32/mem.c	/^_gst_mem_protect (PTR addr, size_t len, int prot)$/;"	f	typeref:typename:int
 _gst_mem_realloc	build/src/libgst/alloc.c	/^_gst_mem_realloc (heap_data *h, void *mem, size_t size)$/;"	f	typeref:typename:void *
 _gst_mem_realloc	src/libgst/alloc.c	/^_gst_mem_realloc (heap_data *h, void *mem, size_t size)$/;"	f	typeref:typename:void *
 _gst_memory_class	build/src/libgst/dict.c	/^OOP _gst_memory_class = NULL;$/;"	v	typeref:typename:OOP
@@ -6075,9 +6007,7 @@ _gst_oop_to_wstring	src/libgst/callin.c	/^_gst_oop_to_wstring (OOP oop)$/;"	f	ty
 _gst_open_file	build/src/libgst/sysdep/common/files.c	/^_gst_open_file (const char *filename,$/;"	f	typeref:typename:int
 _gst_open_file	src/libgst/sysdep/common/files.c	/^_gst_open_file (const char *filename,$/;"	f	typeref:typename:int
 _gst_open_pipe	build/src/libgst/sysdep/posix/files.c	/^_gst_open_pipe (const char *command,$/;"	f	typeref:typename:int
-_gst_open_pipe	build/src/libgst/sysdep/win32/files.c	/^_gst_open_pipe (const char *command,$/;"	f	typeref:typename:int
 _gst_open_pipe	src/libgst/sysdep/posix/files.c	/^_gst_open_pipe (const char *command,$/;"	f	typeref:typename:int
-_gst_open_pipe	src/libgst/sysdep/win32/files.c	/^_gst_open_pipe (const char *command,$/;"	f	typeref:typename:int
 _gst_optimize_bytecodes	build/src/libgst/opt.c	/^_gst_optimize_bytecodes (bc_vector bytecodes)$/;"	f	typeref:typename:bc_vector
 _gst_optimize_bytecodes	src/libgst/opt.c	/^_gst_optimize_bytecodes (bc_vector bytecodes)$/;"	f	typeref:typename:bc_vector
 _gst_or_symbol	build/src/libgst/sym.c	/^OOP _gst_or_symbol = NULL;$/;"	v	typeref:typename:OOP
@@ -6085,29 +6015,17 @@ _gst_or_symbol	src/libgst/sym.c	/^OOP _gst_or_symbol = NULL;$/;"	v	typeref:typen
 _gst_ordered_collection_class	build/src/libgst/dict.c	/^OOP _gst_ordered_collection_class = NULL;$/;"	v	typeref:typename:OOP
 _gst_ordered_collection_class	src/libgst/dict.c	/^OOP _gst_ordered_collection_class = NULL;$/;"	v	typeref:typename:OOP
 _gst_osmem_alloc	build/src/libgst/sysdep/posix/mem.c	/^_gst_osmem_alloc (size_t size)$/;"	f	typeref:typename:PTR
-_gst_osmem_alloc	build/src/libgst/sysdep/win32/mem.c	/^_gst_osmem_alloc (size_t size)$/;"	f	typeref:typename:PTR
 _gst_osmem_alloc	src/libgst/sysdep/posix/mem.c	/^_gst_osmem_alloc (size_t size)$/;"	f	typeref:typename:PTR
-_gst_osmem_alloc	src/libgst/sysdep/win32/mem.c	/^_gst_osmem_alloc (size_t size)$/;"	f	typeref:typename:PTR
 _gst_osmem_commit	build/src/libgst/sysdep/posix/mem.c	/^_gst_osmem_commit (PTR base, size_t size)$/;"	f	typeref:typename:PTR
-_gst_osmem_commit	build/src/libgst/sysdep/win32/mem.c	/^_gst_osmem_commit (PTR base, size_t size)$/;"	f	typeref:typename:PTR
 _gst_osmem_commit	src/libgst/sysdep/posix/mem.c	/^_gst_osmem_commit (PTR base, size_t size)$/;"	f	typeref:typename:PTR
-_gst_osmem_commit	src/libgst/sysdep/win32/mem.c	/^_gst_osmem_commit (PTR base, size_t size)$/;"	f	typeref:typename:PTR
 _gst_osmem_decommit	build/src/libgst/sysdep/posix/mem.c	/^_gst_osmem_decommit (PTR base, size_t size)$/;"	f	typeref:typename:void
-_gst_osmem_decommit	build/src/libgst/sysdep/win32/mem.c	/^_gst_osmem_decommit (PTR base, size_t size)$/;"	f	typeref:typename:void
 _gst_osmem_decommit	src/libgst/sysdep/posix/mem.c	/^_gst_osmem_decommit (PTR base, size_t size)$/;"	f	typeref:typename:void
-_gst_osmem_decommit	src/libgst/sysdep/win32/mem.c	/^_gst_osmem_decommit (PTR base, size_t size)$/;"	f	typeref:typename:void
 _gst_osmem_free	build/src/libgst/sysdep/posix/mem.c	/^_gst_osmem_free (PTR ptr, size_t size)$/;"	f	typeref:typename:void
-_gst_osmem_free	build/src/libgst/sysdep/win32/mem.c	/^_gst_osmem_free (PTR ptr, size_t size)$/;"	f	typeref:typename:void
 _gst_osmem_free	src/libgst/sysdep/posix/mem.c	/^_gst_osmem_free (PTR ptr, size_t size)$/;"	f	typeref:typename:void
-_gst_osmem_free	src/libgst/sysdep/win32/mem.c	/^_gst_osmem_free (PTR ptr, size_t size)$/;"	f	typeref:typename:void
 _gst_osmem_release	build/src/libgst/sysdep/posix/mem.c	/^_gst_osmem_release (PTR base, size_t size)$/;"	f	typeref:typename:void
-_gst_osmem_release	build/src/libgst/sysdep/win32/mem.c	/^_gst_osmem_release (PTR base, size_t size)$/;"	f	typeref:typename:void
 _gst_osmem_release	src/libgst/sysdep/posix/mem.c	/^_gst_osmem_release (PTR base, size_t size)$/;"	f	typeref:typename:void
-_gst_osmem_release	src/libgst/sysdep/win32/mem.c	/^_gst_osmem_release (PTR base, size_t size)$/;"	f	typeref:typename:void
 _gst_osmem_reserve	build/src/libgst/sysdep/posix/mem.c	/^_gst_osmem_reserve (PTR address, size_t size)$/;"	f	typeref:typename:PTR
-_gst_osmem_reserve	build/src/libgst/sysdep/win32/mem.c	/^_gst_osmem_reserve (PTR address, size_t size)$/;"	f	typeref:typename:PTR
 _gst_osmem_reserve	src/libgst/sysdep/posix/mem.c	/^_gst_osmem_reserve (PTR address, size_t size)$/;"	f	typeref:typename:PTR
-_gst_osmem_reserve	src/libgst/sysdep/win32/mem.c	/^_gst_osmem_reserve (PTR address, size_t size)$/;"	f	typeref:typename:PTR
 _gst_parse_chunks	build/src/libgst/gst-parse.c	/^_gst_parse_chunks (OOP currentNamespace)$/;"	f	typeref:typename:void
 _gst_parse_chunks	src/libgst/gst-parse.c	/^_gst_parse_chunks (OOP currentNamespace)$/;"	f	typeref:typename:void
 _gst_parse_method	build/src/libgst/gst-parse.c	/^_gst_parse_method (OOP currentClass, OOP currentCategory)$/;"	f	typeref:typename:OOP
@@ -6117,9 +6035,7 @@ _gst_parse_method_from_stream	src/libgst/lex.c	/^_gst_parse_method_from_stream (
 _gst_parse_stream	build/src/libgst/lex.c	/^_gst_parse_stream (OOP currentNamespace)$/;"	f	typeref:typename:void
 _gst_parse_stream	src/libgst/lex.c	/^_gst_parse_stream (OOP currentNamespace)$/;"	f	typeref:typename:void
 _gst_pause	build/src/libgst/sysdep/posix/events.c	/^_gst_pause (void)$/;"	f	typeref:typename:void
-_gst_pause	build/src/libgst/sysdep/win32/events.c	/^_gst_pause (void)$/;"	f	typeref:typename:void
 _gst_pause	src/libgst/sysdep/posix/events.c	/^_gst_pause (void)$/;"	f	typeref:typename:void
-_gst_pause	src/libgst/sysdep/win32/events.c	/^_gst_pause (void)$/;"	f	typeref:typename:void
 _gst_perform	build/src/libgst/callin.c	/^_gst_perform (OOP receiver, OOP selector)$/;"	f	typeref:typename:OOP
 _gst_perform	src/libgst/callin.c	/^_gst_perform (OOP receiver, OOP selector)$/;"	f	typeref:typename:OOP
 _gst_perform_with	build/src/libgst/callin.c	/^_gst_perform_with (OOP receiver, OOP selector, OOP arg)$/;"	f	typeref:typename:OOP
@@ -6231,9 +6147,7 @@ _gst_register_oop	src/libgst/callin.c	/^_gst_register_oop (OOP oop)$/;"	f	typere
 _gst_register_oop_array	build/src/libgst/callin.c	/^_gst_register_oop_array (OOP **first, OOP **last)$/;"	f	typeref:typename:void
 _gst_register_oop_array	src/libgst/callin.c	/^_gst_register_oop_array (OOP **first, OOP **last)$/;"	f	typeref:typename:void
 _gst_register_socket	build/src/libgst/sysdep/posix/events.c	/^_gst_register_socket (int fd,$/;"	f	typeref:typename:void
-_gst_register_socket	build/src/libgst/sysdep/win32/events.c	/^_gst_register_socket (int fd,$/;"	f	typeref:typename:void
 _gst_register_socket	src/libgst/sysdep/posix/events.c	/^_gst_register_socket (int fd,$/;"	f	typeref:typename:void
-_gst_register_socket	src/libgst/sysdep/win32/events.c	/^_gst_register_socket (int fd,$/;"	f	typeref:typename:void
 _gst_registers	build/src/libgst/re.c	/^typedef struct _gst_registers$/;"	s	file:
 _gst_registers	src/libgst/re.c	/^typedef struct _gst_registers$/;"	s	file:
 _gst_regression_testing	build/src/libgst/files.c	/^mst_Boolean _gst_regression_testing = false;$/;"	v	typeref:typename:mst_Boolean
@@ -6243,9 +6157,7 @@ _gst_release_native_code	src/libgst/xlat.c	/^_gst_release_native_code (OOP metho
 _gst_relocate_path	build/src/libgst/sysdep/common/files.c	/^_gst_relocate_path (const char *path)$/;"	f	typeref:typename:char *
 _gst_relocate_path	src/libgst/sysdep/common/files.c	/^_gst_relocate_path (const char *path)$/;"	f	typeref:typename:char *
 _gst_remove_fd_polling_handlers	build/src/libgst/sysdep/posix/events.c	/^_gst_remove_fd_polling_handlers (int fd)$/;"	f	typeref:typename:void
-_gst_remove_fd_polling_handlers	build/src/libgst/sysdep/win32/events.c	/^_gst_remove_fd_polling_handlers (int fd)$/;"	f	typeref:typename:void
 _gst_remove_fd_polling_handlers	src/libgst/sysdep/posix/events.c	/^_gst_remove_fd_polling_handlers (int fd)$/;"	f	typeref:typename:void
-_gst_remove_fd_polling_handlers	src/libgst/sysdep/win32/events.c	/^_gst_remove_fd_polling_handlers (int fd)$/;"	f	typeref:typename:void
 _gst_repeat_symbol	build/src/libgst/sym.c	/^OOP _gst_repeat_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_repeat_symbol	src/libgst/sym.c	/^OOP _gst_repeat_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_report_errors	build/src/libgst/lex.c	/^mst_Boolean _gst_report_errors = true;$/;"	v	typeref:typename:mst_Boolean
@@ -6320,12 +6232,8 @@ _gst_set_errno	build/src/libgst/cint.c	/^_gst_set_errno(int errnum)$/;"	f	typere
 _gst_set_errno	src/libgst/cint.c	/^_gst_set_errno(int errnum)$/;"	f	typeref:typename:void
 _gst_set_event_loop_handlers	build/src/libgst/events.c	/^_gst_set_event_loop_handlers(mst_Boolean (*poll) (int ms),$/;"	f	typeref:typename:mst_Boolean
 _gst_set_event_loop_handlers	src/libgst/events.c	/^_gst_set_event_loop_handlers(mst_Boolean (*poll) (int ms),$/;"	f	typeref:typename:mst_Boolean
-_gst_set_executable_path	build/src/libgst/sysdep/cygwin/findexec.c	/^_gst_set_executable_path (const char *argv0)$/;"	f	typeref:typename:void
 _gst_set_executable_path	build/src/libgst/sysdep/posix/findexec.c	/^_gst_set_executable_path (const char *argv0)$/;"	f	typeref:typename:void
-_gst_set_executable_path	build/src/libgst/sysdep/win32/findexec.c	/^_gst_set_executable_path (const char *argv0)$/;"	f	typeref:typename:void
-_gst_set_executable_path	src/libgst/sysdep/cygwin/findexec.c	/^_gst_set_executable_path (const char *argv0)$/;"	f	typeref:typename:void
 _gst_set_executable_path	src/libgst/sysdep/posix/findexec.c	/^_gst_set_executable_path (const char *argv0)$/;"	f	typeref:typename:void
-_gst_set_executable_path	src/libgst/sysdep/win32/findexec.c	/^_gst_set_executable_path (const char *argv0)$/;"	f	typeref:typename:void
 _gst_set_file_access_times	build/src/libgst/sysdep/common/files.c	/^_gst_set_file_access_times (const char *name, long new_atime, long new_mtime)$/;"	f	typeref:typename:int
 _gst_set_file_access_times	src/libgst/sysdep/common/files.c	/^_gst_set_file_access_times (const char *name, long new_atime, long new_mtime)$/;"	f	typeref:typename:int
 _gst_set_file_stream_file	build/src/libgst/dict.c	/^_gst_set_file_stream_file (OOP fileStreamOOP,$/;"	f	typeref:typename:void
@@ -6339,9 +6247,7 @@ _gst_set_oopstring	src/libgst/dict.c	/^_gst_set_oopstring (OOP stringOOP,$/;"	f	
 _gst_set_primitive_attributes	build/src/libgst/interp.c	/^_gst_set_primitive_attributes (int primitive, prim_table_entry *pte)$/;"	f	typeref:typename:void
 _gst_set_primitive_attributes	src/libgst/interp.c	/^_gst_set_primitive_attributes (int primitive, prim_table_entry *pte)$/;"	f	typeref:typename:void
 _gst_set_signal_handler	build/src/libgst/sysdep/posix/signals.c	/^_gst_set_signal_handler (int signum,$/;"	f	typeref:typename:SigHandler
-_gst_set_signal_handler	build/src/libgst/sysdep/win32/signals.c	/^_gst_set_signal_handler (int signum,$/;"	f	typeref:typename:SigHandler
 _gst_set_signal_handler	src/libgst/sysdep/posix/signals.c	/^_gst_set_signal_handler (int signum,$/;"	f	typeref:typename:SigHandler
-_gst_set_signal_handler	src/libgst/sysdep/win32/signals.c	/^_gst_set_signal_handler (int signum,$/;"	f	typeref:typename:SigHandler
 _gst_set_stream_info	build/src/libgst/input.c	/^_gst_set_stream_info (int line,$/;"	f	typeref:typename:void
 _gst_set_stream_info	src/libgst/input.c	/^_gst_set_stream_info (int line,$/;"	f	typeref:typename:void
 _gst_set_var	build/src/libgst/interp.c	/^_gst_set_var (enum gst_var_index index, int value)$/;"	f	typeref:typename:int
@@ -6354,22 +6260,14 @@ _gst_show_backtrace	build/src/libgst/interp.c	/^_gst_show_backtrace (FILE *fp)$/
 _gst_show_backtrace	src/libgst/interp.c	/^_gst_show_backtrace (FILE *fp)$/;"	f	typeref:typename:void
 _gst_show_stack_contents	build/src/libgst/interp.c	/^_gst_show_stack_contents (void)$/;"	f	typeref:typename:void
 _gst_show_stack_contents	src/libgst/interp.c	/^_gst_show_stack_contents (void)$/;"	f	typeref:typename:void
-_gst_sigalrm_at	build/src/libgst/sysdep/cygwin/timer.c	/^_gst_sigalrm_at (int64_t nsTime)$/;"	f	typeref:typename:void
 _gst_sigalrm_at	build/src/libgst/sysdep/posix/timer.c	/^_gst_sigalrm_at (int64_t nsTime)$/;"	f	typeref:typename:void
-_gst_sigalrm_at	src/libgst/sysdep/cygwin/timer.c	/^_gst_sigalrm_at (int64_t nsTime)$/;"	f	typeref:typename:void
 _gst_sigalrm_at	src/libgst/sysdep/posix/timer.c	/^_gst_sigalrm_at (int64_t nsTime)$/;"	f	typeref:typename:void
 _gst_sigalrm_cancel	build/src/libgst/sysdep/posix/timer.c	/^_gst_sigalrm_cancel ()$/;"	f	typeref:typename:void
 _gst_sigalrm_cancel	src/libgst/sysdep/posix/timer.c	/^_gst_sigalrm_cancel ()$/;"	f	typeref:typename:void
 _gst_signal_count	build/src/libgst/sysdep/posix/signals.c	/^int _gst_signal_count;$/;"	v	typeref:typename:int
-_gst_signal_count	build/src/libgst/sysdep/win32/signals.c	/^int _gst_signal_count;$/;"	v	typeref:typename:int
 _gst_signal_count	src/libgst/sysdep/posix/signals.c	/^int _gst_signal_count;$/;"	v	typeref:typename:int
-_gst_signal_count	src/libgst/sysdep/win32/signals.c	/^int _gst_signal_count;$/;"	v	typeref:typename:int
-_gst_sigvtalrm_every	build/src/libgst/sysdep/cygwin/timer.c	/^_gst_sigvtalrm_every (int deltaMilli,$/;"	f	typeref:typename:void
 _gst_sigvtalrm_every	build/src/libgst/sysdep/posix/timer.c	/^_gst_sigvtalrm_every (int deltaMilli,$/;"	f	typeref:typename:void
-_gst_sigvtalrm_every	build/src/libgst/sysdep/win32/timer.c	/^_gst_sigvtalrm_every (int deltaMilli, SigHandler func)$/;"	f	typeref:typename:void
-_gst_sigvtalrm_every	src/libgst/sysdep/cygwin/timer.c	/^_gst_sigvtalrm_every (int deltaMilli,$/;"	f	typeref:typename:void
 _gst_sigvtalrm_every	src/libgst/sysdep/posix/timer.c	/^_gst_sigvtalrm_every (int deltaMilli,$/;"	f	typeref:typename:void
-_gst_sigvtalrm_every	src/libgst/sysdep/win32/timer.c	/^_gst_sigvtalrm_every (int deltaMilli, SigHandler func)$/;"	f	typeref:typename:void
 _gst_skip_compilation	build/src/libgst/comp.c	/^mst_Boolean _gst_skip_compilation = false;$/;"	v	typeref:typename:mst_Boolean
 _gst_skip_compilation	src/libgst/comp.c	/^mst_Boolean _gst_skip_compilation = false;$/;"	v	typeref:typename:mst_Boolean
 _gst_small_integer_class	build/src/libgst/dict.c	/^OOP _gst_small_integer_class = NULL;$/;"	v	typeref:typename:OOP
@@ -6425,9 +6323,7 @@ _gst_symbol_table	src/libgst/sym.c	/^OOP _gst_symbol_table = NULL;$/;"	v	typeref
 _gst_symbol_to_oop	build/src/libgst/callin.c	/^_gst_symbol_to_oop (const char *str)$/;"	f	typeref:typename:OOP
 _gst_symbol_to_oop	src/libgst/callin.c	/^_gst_symbol_to_oop (const char *str)$/;"	f	typeref:typename:OOP
 _gst_sync_file_polling	build/src/libgst/sysdep/posix/events.c	/^_gst_sync_file_polling (int fd,$/;"	f	typeref:typename:int
-_gst_sync_file_polling	build/src/libgst/sysdep/win32/events.c	/^_gst_sync_file_polling (int fd,$/;"	f	typeref:typename:int
 _gst_sync_file_polling	src/libgst/sysdep/posix/events.c	/^_gst_sync_file_polling (int fd,$/;"	f	typeref:typename:int
-_gst_sync_file_polling	src/libgst/sysdep/win32/events.c	/^_gst_sync_file_polling (int fd,$/;"	f	typeref:typename:int
 _gst_sync_signal	build/src/libgst/interp.c	/^_gst_sync_signal (OOP semaphoreOOP, mst_Boolean incr_if_empty)$/;"	f	typeref:typename:mst_Boolean
 _gst_sync_signal	src/libgst/interp.c	/^_gst_sync_signal (OOP semaphoreOOP, mst_Boolean incr_if_empty)$/;"	f	typeref:typename:mst_Boolean
 _gst_sync_wait	build/src/libgst/interp.c	/^_gst_sync_wait (OOP semaphoreOOP)$/;"	f	typeref:typename:void
@@ -6509,9 +6405,7 @@ _gst_user_file_base_path	src/libgst/files.c	/^const char *_gst_user_file_base_pa
 _gst_ushort_symbol	build/src/libgst/sym.c	/^OOP _gst_ushort_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_ushort_symbol	src/libgst/sym.c	/^OOP _gst_ushort_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_usleep	build/src/libgst/sysdep/posix/time.c	/^_gst_usleep (int us)$/;"	f	typeref:typename:void
-_gst_usleep	build/src/libgst/sysdep/win32/time.c	/^_gst_usleep (int us)$/;"	f	typeref:typename:void
 _gst_usleep	src/libgst/sysdep/posix/time.c	/^_gst_usleep (int us)$/;"	f	typeref:typename:void
-_gst_usleep	src/libgst/sysdep/win32/time.c	/^_gst_usleep (int us)$/;"	f	typeref:typename:void
 _gst_va_msg_send	build/src/libgst/callin.c	/^_gst_va_msg_send (OOP receiver,$/;"	f	typeref:typename:OOP
 _gst_va_msg_send	src/libgst/callin.c	/^_gst_va_msg_send (OOP receiver,$/;"	f	typeref:typename:OOP
 _gst_va_msg_sendf	build/src/libgst/callin.c	/^_gst_va_msg_sendf (PTR resultPtr, $/;"	f	typeref:typename:void
@@ -6543,13 +6437,9 @@ _gst_vmsg_send	src/libgst/callin.c	/^_gst_vmsg_send (OOP receiver,$/;"	f	typeref
 _gst_void_symbol	build/src/libgst/sym.c	/^OOP _gst_void_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_void_symbol	src/libgst/sym.c	/^OOP _gst_void_symbol = NULL;$/;"	v	typeref:typename:OOP
 _gst_wait_for_input	build/src/libgst/sysdep/posix/events.c	/^_gst_wait_for_input (int fd)$/;"	f	typeref:typename:void
-_gst_wait_for_input	build/src/libgst/sysdep/win32/events.c	/^_gst_wait_for_input (int fd)$/;"	f	typeref:typename:void
 _gst_wait_for_input	src/libgst/sysdep/posix/events.c	/^_gst_wait_for_input (int fd)$/;"	f	typeref:typename:void
-_gst_wait_for_input	src/libgst/sysdep/win32/events.c	/^_gst_wait_for_input (int fd)$/;"	f	typeref:typename:void
 _gst_wakeup	build/src/libgst/sysdep/posix/events.c	/^_gst_wakeup (void)$/;"	f	typeref:typename:void
-_gst_wakeup	build/src/libgst/sysdep/win32/events.c	/^_gst_wakeup (void)$/;"	f	typeref:typename:void
 _gst_wakeup	src/libgst/sysdep/posix/events.c	/^_gst_wakeup (void)$/;"	f	typeref:typename:void
-_gst_wakeup	src/libgst/sysdep/win32/events.c	/^_gst_wakeup (void)$/;"	f	typeref:typename:void
 _gst_warningf	build/src/libgst/input.c	/^_gst_warningf (const char *str,$/;"	f	typeref:typename:void
 _gst_warningf	src/libgst/input.c	/^_gst_warningf (const char *str,$/;"	f	typeref:typename:void
 _gst_warningf_at	build/src/libgst/input.c	/^_gst_warningf_at (int line,$/;"	f	typeref:typename:void
@@ -6817,12 +6707,6 @@ ai_flags	src/libaux/getaddrinfo.h	/^  int ai_flags;			\/* Input flags.  *\/$/;"	
 ai_next	src/libaux/getaddrinfo.h	/^  struct addrinfo *ai_next;	\/* Pointer to next in list.  *\/$/;"	m	struct:addrinfo	typeref:struct:addrinfo *
 ai_protocol	src/libaux/getaddrinfo.h	/^  int ai_protocol;		\/* Protocol for socket.  *\/$/;"	m	struct:addrinfo	typeref:typename:int
 ai_socktype	src/libaux/getaddrinfo.h	/^  int ai_socktype;		\/* Socket type.  *\/$/;"	m	struct:addrinfo	typeref:typename:int
-alarm_thread	build/src/libgst/sysdep/cygwin/timer.c	/^alarm_thread (unused)$/;"	f
-alarm_thread	build/src/libgst/sysdep/win32/events.c	/^alarm_thread (LPVOID unused)$/;"	f	typeref:typename:unsigned WINAPI	file:
-alarm_thread	src/libgst/sysdep/cygwin/timer.c	/^alarm_thread (unused)$/;"	f
-alarm_thread	src/libgst/sysdep/win32/events.c	/^alarm_thread (LPVOID unused)$/;"	f	typeref:typename:unsigned WINAPI	file:
-alarms	build/src/libgst/sysdep/cygwin/timer.c	/^alarms;$/;"	v	typeref:struct:__anon818e52280108
-alarms	src/libgst/sysdep/cygwin/timer.c	/^alarms;$/;"	v	typeref:struct:__anon1d8279890108
 align	build/src/libgst/alloc.h	/^      long double align;	 \/* Give appropriate alignment *\/$/;"	m	union:heap_block::__anona8b91f10010a::__anona8b91f10040a	typeref:typename:long double
 align	src/libaux/alloca.c	/^  char align[ALIGN_SIZE];	\/* To force sizeof(header).  *\/$/;"	m	union:hdr	typeref:typename:char[]	file:
 align	src/libgst/alloc.h	/^      long double align;	 \/* Give appropriate alignment *\/$/;"	m	union:heap_block::__anon84ab80b1010a::__anon84ab80b1040a	typeref:typename:long double
@@ -8461,9 +8345,7 @@ dummy	src/libgst/save.c	/^  char dummy[64];	\/* Bourne shell command to execute 
 dummy_failure_jump	build/src/libaux/regex.c	/^  dummy_failure_jump,		\/* Jump, and push a dummy failure point. This $/;"	e	enum:regexpcode	file:
 dummy_failure_jump	src/libaux/regex.c	/^  dummy_failure_jump,		\/* Jump, and push a dummy failure point. This $/;"	e	enum:regexpcode	file:
 dummy_signal_handler	build/src/libgst/sysdep/posix/events.c	/^dummy_signal_handler (int sig)$/;"	f	typeref:typename:RETSIGTYPE	file:
-dummy_signal_handler	build/src/libgst/sysdep/win32/signals.c	/^dummy_signal_handler (int sig)$/;"	f	typeref:typename:RETSIGTYPE	file:
 dummy_signal_handler	src/libgst/sysdep/posix/events.c	/^dummy_signal_handler (int sig)$/;"	f	typeref:typename:RETSIGTYPE	file:
-dummy_signal_handler	src/libgst/sysdep/win32/signals.c	/^dummy_signal_handler (int sig)$/;"	f	typeref:typename:RETSIGTYPE	file:
 dump	src/superops/hash-table.cc	/^Hash_Table::dump () const$/;"	f	class:Hash_Table	typeref:typename:void
 dump	src/util/superops/hash-table.cc	/^Hash_Table::dump () const$/;"	f	class:Hash_Table	typeref:typename:void
 duplicate	build/src/libaux/regex.c	/^  duplicate,			\/* Match a duplicate of something remembered.$/;"	e	enum:regexpcode	file:
@@ -8565,10 +8447,8 @@ equal_constant	src/libgst/comp.c	/^equal_constant (OOP oop,$/;"	f	typeref:typena
 equals	src/superops/search.cc	/^equals (const unsigned int *ptr1, const unsigned int *ptr2, unsigned int len)$/;"	f	typeref:typename:bool	file:
 equals	src/util/superops/search.cc	/^equals (const unsigned int *ptr1, const unsigned int *ptr2, unsigned int len)$/;"	f	typeref:typename:bool	file:
 error	build/lib/snprintfv/printf.h	/^  Filament *error;		\/* accumulated error details *\/$/;"	m	struct:printf_info	typeref:typename:Filament *
-error	build/src/libgst/sysdep/win32/events.c	/^  int error;$/;"	m	struct:handle_events	typeref:typename:int	file:
 error	build/src/snprintfv/printf.h	/^  Filament *error;		\/* accumulated error details *\/$/;"	m	struct:printf_info	typeref:typename:Filament *
 error	lib/snprintfv/printf.h	/^  Filament *error;		\/* accumulated error details *\/$/;"	m	struct:printf_info	typeref:typename:Filament *
-error	src/libgst/sysdep/win32/events.c	/^  int error;$/;"	m	struct:handle_events	typeref:typename:int	file:
 error	src/snprintfv/printf.h	/^  Filament *error;		\/* accumulated error details *\/$/;"	m	struct:printf_info	typeref:typename:Filament *
 error:;             \t\t\tNULL	src/libgst/builtins.gperf	/^error:;             			NULL, 1,       49$/;"	k
 errorContents:;     \t\t\tNULL	src/libgst/builtins.gperf	/^errorContents:;     			NULL, 1,       230$/;"	k
@@ -8670,20 +8550,6 @@ fetch_uintmax	build/lib/snprintfv/format.c	/^fetch_uintmax (struct printf_info *
 fetch_uintmax	build/src/snprintfv/format.c	/^fetch_uintmax (struct printf_info *pinfo, union printf_arg const *arg)$/;"	f	typeref:typename:uintmax_t	file:
 fetch_uintmax	lib/snprintfv/format.c	/^fetch_uintmax (struct printf_info *pinfo, union printf_arg const *arg)$/;"	f	typeref:typename:uintmax_t	file:
 fetch_uintmax	src/snprintfv/format.c	/^fetch_uintmax (struct printf_info *pinfo, union printf_arg const *arg)$/;"	f	typeref:typename:uintmax_t	file:
-fhev_delete	build/src/libgst/sysdep/win32/events.c	/^fhev_delete (HANDLE handle)$/;"	f	typeref:struct:handle_events *	file:
-fhev_delete	src/libgst/sysdep/win32/events.c	/^fhev_delete (HANDLE handle)$/;"	f	typeref:struct:handle_events *	file:
-fhev_find	build/src/libgst/sysdep/win32/events.c	/^fhev_find (HANDLE handle)$/;"	f	typeref:struct:handle_events *	file:
-fhev_find	src/libgst/sysdep/win32/events.c	/^fhev_find (HANDLE handle)$/;"	f	typeref:struct:handle_events *	file:
-fhev_kind	build/src/libgst/sysdep/win32/events.c	/^enum fhev_kind {$/;"	g	file:
-fhev_kind	src/libgst/sysdep/win32/events.c	/^enum fhev_kind {$/;"	g	file:
-fhev_new	build/src/libgst/sysdep/win32/events.c	/^fhev_new (HANDLE handle, enum fhev_kind kind)$/;"	f	typeref:struct:handle_events *	file:
-fhev_new	src/libgst/sysdep/win32/events.c	/^fhev_new (HANDLE handle, enum fhev_kind kind)$/;"	f	typeref:struct:handle_events *	file:
-fhev_poll	build/src/libgst/sysdep/win32/events.c	/^fhev_poll (struct handle_events *ev)$/;"	f	typeref:typename:int
-fhev_poll	src/libgst/sysdep/win32/events.c	/^fhev_poll (struct handle_events *ev)$/;"	f	typeref:typename:int
-fhev_ref	build/src/libgst/sysdep/win32/events.c	/^fhev_ref (struct handle_events *ev)$/;"	f	typeref:struct:handle_events *	file:
-fhev_ref	src/libgst/sysdep/win32/events.c	/^fhev_ref (struct handle_events *ev)$/;"	f	typeref:struct:handle_events *	file:
-fhev_unref	build/src/libgst/sysdep/win32/events.c	/^fhev_unref (struct handle_events *ev)$/;"	f	typeref:struct:handle_events *	file:
-fhev_unref	src/libgst/sysdep/win32/events.c	/^fhev_unref (struct handle_events *ev)$/;"	f	typeref:struct:handle_events *	file:
 field	src/libgst/genbc-decl.c	/^  struct field_info *field;$/;"	m	union:YYSTYPE	typeref:struct:field_info *	file:
 field	src/libgst/genbc-decl.h	/^  struct field_info *field;$/;"	m	union:YYSTYPE	typeref:struct:field_info *
 field	src/libgst/genbc-impl.c	/^  struct field_info *field;$/;"	m	union:YYSTYPE	typeref:struct:field_info *	file:
@@ -8728,8 +8594,8 @@ fileOffset	build/src/libgst/input.c	/^  off_t fileOffset;$/;"	m	struct:input_str
 fileOffset	src/libgst/input.c	/^  off_t fileOffset;$/;"	m	struct:input_stream	typeref:typename:off_t	file:
 fileStreamClass	build/src/libgst/gstpub.h	/^    fileDescriptorClass, fileStreamClass, processClass, semaphoreClass,$/;"	m	struct:VMProxy	typeref:typename:OOP
 fileStreamClass	src/libgst/gstpub.h	/^    fileDescriptorClass, fileStreamClass, processClass, semaphoreClass,$/;"	m	struct:VMProxy	typeref:typename:OOP
-file_name	build/src/apps/main.c	/^  const char *file_name;$/;"	m	struct:loaded_file	typeref:typename:const char *	file:
-file_name	src/apps/main.c	/^  const char *file_name;$/;"	m	struct:loaded_file	typeref:typename:const char *	file:
+file_name	build/src/apps/main.c	/^    const char *file_name;$/;"	m	struct:loaded_file	typeref:typename:const char *	file:
+file_name	src/apps/main.c	/^    const char *file_name;$/;"	m	struct:loaded_file	typeref:typename:const char *	file:
 file_offset	build/src/libgst/lex.h	/^  int64_t file_offset;$/;"	m	struct:YYLTYPE	typeref:typename:int64_t
 file_offset	src/libgst/lex.h	/^  int64_t file_offset;$/;"	m	struct:YYLTYPE	typeref:typename:int64_t
 file_polling_handler	build/src/libgst/sysdep/posix/events.c	/^file_polling_handler (int sig)$/;"	f	typeref:typename:RETSIGTYPE
@@ -9783,26 +9649,6 @@ guard	src/libaux/lock.h	/^          gl_spinlock_t guard; \/* protects the initia
 guard	src/libaux/lock.h	/^          pthread_mutex_t guard;    \/* protects the initialization *\/$/;"	m	struct:__anon2b42eb4f0308	typeref:typename:pthread_mutex_t
 guard	src/libaux/lock.h	/^          pthread_mutex_t guard;   \/* protects the initialization *\/$/;"	m	struct:__anon2b42eb4f0108	typeref:typename:pthread_mutex_t
 h	src/libaux/alloca.c	/^    } h;$/;"	m	union:hdr	typeref:struct:hdr::__anon0f4be76d0108	file:
-hAlarmEvent	build/src/libgst/sysdep/win32/events.c	/^#define hAlarmEvent	/;"	d	file:
-hAlarmEvent	src/libgst/sysdep/win32/events.c	/^#define hAlarmEvent	/;"	d	file:
-hConIn	build/src/libgst/sysdep/win32/events.c	/^#define hConIn	/;"	d	file:
-hConIn	src/libgst/sysdep/win32/events.c	/^#define hConIn	/;"	d	file:
-hNewWaitEvent	build/src/libgst/sysdep/cygwin/timer.c	/^  HANDLE hNewWaitEvent;$/;"	m	struct:__anon818e52280108	typeref:typename:HANDLE	file:
-hNewWaitEvent	build/src/libgst/sysdep/win32/events.c	/^static HANDLE hNewWaitEvent;$/;"	v	typeref:typename:HANDLE	file:
-hNewWaitEvent	src/libgst/sysdep/cygwin/timer.c	/^  HANDLE hNewWaitEvent;$/;"	m	struct:__anon1d8279890108	typeref:typename:HANDLE	file:
-hNewWaitEvent	src/libgst/sysdep/win32/events.c	/^static HANDLE hNewWaitEvent;$/;"	v	typeref:typename:HANDLE	file:
-hSocketEvent	build/src/libgst/sysdep/win32/events.c	/^#define hSocketEvent	/;"	d	file:
-hSocketEvent	src/libgst/sysdep/win32/events.c	/^#define hSocketEvent	/;"	d	file:
-hWakeUpEvent	build/src/libgst/sysdep/win32/events.c	/^static HANDLE hWakeUpEvent;$/;"	v	typeref:typename:HANDLE	file:
-hWakeUpEvent	src/libgst/sysdep/win32/events.c	/^static HANDLE hWakeUpEvent;$/;"	v	typeref:typename:HANDLE	file:
-handle	build/src/libgst/sysdep/win32/events.c	/^  HANDLE handle;$/;"	m	struct:handle_events	typeref:typename:HANDLE	file:
-handle	src/libgst/sysdep/win32/events.c	/^  HANDLE handle;$/;"	m	struct:handle_events	typeref:typename:HANDLE	file:
-handle_events	build/src/libgst/sysdep/win32/events.c	/^struct handle_events$/;"	s	file:
-handle_events	src/libgst/sysdep/win32/events.c	/^struct handle_events$/;"	s	file:
-handle_events_cs	build/src/libgst/sysdep/win32/events.c	/^static CRITICAL_SECTION handle_events_cs;$/;"	v	typeref:typename:CRITICAL_SECTION	file:
-handle_events_cs	src/libgst/sysdep/win32/events.c	/^static CRITICAL_SECTION handle_events_cs;$/;"	v	typeref:typename:CRITICAL_SECTION	file:
-handles	build/src/libgst/sysdep/win32/events.c	/^static HANDLE handles[3];$/;"	v	typeref:typename:HANDLE[3]	file:
-handles	src/libgst/sysdep/win32/events.c	/^static HANDLE handles[3];$/;"	v	typeref:typename:HANDLE[3]	file:
 hash-table.o	src/superops/Makefile	/^hash-table.o : hash-table.cc $(HASH_TABLE_H) $(OPTIONS_H)$/;"	t
 hash-table.o	src/util/superops/Makefile	/^hash-table.o : hash-table.cc $(HASH_TABLE_H) $(OPTIONS_H)$/;"	t
 hash.o	src/superops/Makefile	/^hash.o : hash.cc hash.h observer-list.h$/;"	t
@@ -9827,10 +9673,8 @@ have_timer	src/libgst/sysdep/posix/timer.c	/^static mst_Boolean have_timer;$/;"	
 hdr	src/libaux/alloca.c	/^typedef union hdr$/;"	u	file:
 head	build/src/libgst/oop.h	/^  grey_area_node *head, *tail;$/;"	m	struct:grey_area_list	typeref:typename:grey_area_node *
 head	build/src/libgst/sysdep/posix/events.c	/^static polling_queue *head, **p_tail_next = &head;$/;"	v	typeref:typename:polling_queue *	file:
-head	build/src/libgst/sysdep/win32/events.c	/^static struct handle_events *head;$/;"	v	typeref:struct:handle_events *	file:
 head	src/libgst/oop.h	/^  grey_area_node *head, *tail;$/;"	m	struct:grey_area_list	typeref:typename:grey_area_node *
 head	src/libgst/sysdep/posix/events.c	/^static polling_queue *head, **p_tail_next = &head;$/;"	v	typeref:typename:polling_queue *	file:
-head	src/libgst/sysdep/win32/events.c	/^static struct handle_events *head;$/;"	v	typeref:struct:handle_events *	file:
 header	build/src/libgst/comp.h	/^  block_header header;$/;"	m	struct:gst_compiled_block	typeref:typename:block_header
 header	build/src/libgst/comp.h	/^  method_header header;$/;"	m	struct:gst_compiled_method	typeref:typename:method_header
 header	src/libaux/alloca.c	/^} header;$/;"	t	typeref:union:hdr	file:
@@ -10325,8 +10169,8 @@ kernel_dir	build/src/apps/gst-tool.c	/^const char *kernel_dir;$/;"	v	typeref:typ
 kernel_dir	build/src/apps/main.c	/^char *kernel_dir = NULL;$/;"	v	typeref:typename:char *
 kernel_dir	src/apps/gst-tool.c	/^const char *kernel_dir;$/;"	v	typeref:typename:const char *
 kernel_dir	src/apps/main.c	/^char *kernel_dir = NULL;$/;"	v	typeref:typename:char *
-kernel_path	build/src/apps/main.c	/^  mst_Boolean kernel_path;$/;"	m	struct:loaded_file	typeref:typename:mst_Boolean	file:
-kernel_path	src/apps/main.c	/^  mst_Boolean kernel_path;$/;"	m	struct:loaded_file	typeref:typename:mst_Boolean	file:
+kernel_path	build/src/apps/main.c	/^    mst_Boolean kernel_path;$/;"	m	struct:loaded_file	typeref:typename:mst_Boolean	file:
+kernel_path	src/apps/main.c	/^    mst_Boolean kernel_path;$/;"	m	struct:loaded_file	typeref:typename:mst_Boolean	file:
 key	build/src/libgst/builtins.inl	/^      register int key = _gst_hash_selector (str, len);$/;"	v	typeref:typename:register int
 key	build/src/libgst/dict.h	/^  OOP key;$/;"	m	struct:gst_association	typeref:typename:OOP
 key	build/src/libgst/dict.h	/^  OOP key;$/;"	m	struct:gst_deferred_variable_binding	typeref:typename:OOP
@@ -10353,9 +10197,7 @@ keyword_h	src/util/superops/keyword.h	/^#define keyword_h /;"	d
 keyword_list_h	src/superops/keyword-list.h	/^#define keyword_list_h /;"	d
 keyword_list_h	src/util/superops/keyword-list.h	/^#define keyword_list_h /;"	d
 kind	build/src/libgst/opt.c	/^  int kind;$/;"	m	struct:block_boundary	typeref:typename:int	file:
-kind	build/src/libgst/sysdep/win32/events.c	/^  enum fhev_kind kind;$/;"	m	struct:handle_events	typeref:enum:fhev_kind	file:
 kind	src/libgst/opt.c	/^  int kind;$/;"	m	struct:block_boundary	typeref:typename:int	file:
-kind	src/libgst/sysdep/win32/events.c	/^  enum fhev_kind kind;$/;"	m	struct:handle_events	typeref:enum:fhev_kind	file:
 la	build/src/libgst/gst-parse.h	/^  gst_lookahead la [4];$/;"	m	struct:gst_parser	typeref:typename:gst_lookahead[4]
 la	src/libgst/gst-parse.h	/^  gst_lookahead la [4];$/;"	m	struct:gst_parser	typeref:typename:gst_lookahead[4]
 la_first	build/src/libgst/gst-parse.h	/^  int la_first;$/;"	m	struct:gst_parser	typeref:typename:int
@@ -10487,8 +10329,6 @@ lispdir	src/libgst/Makefile	/^lispdir = ${datadir}\/emacs\/site-lisp$/;"	m
 lispdir	src/libgst/Makefile.in	/^lispdir = @lispdir@$/;"	m
 lispstartdir	src/libgst/Makefile	/^lispstartdir = ${lispdir}\/site-start.d$/;"	m
 lispstartdir	src/libgst/Makefile.in	/^lispstartdir = @lispstartdir@$/;"	m
-list	build/src/libgst/sysdep/win32/events.c	/^  struct semaphore_list *list;$/;"	m	struct:handle_events	typeref:struct:semaphore_list *	file:
-list	src/libgst/sysdep/win32/events.c	/^  struct semaphore_list *list;$/;"	m	struct:handle_events	typeref:struct:semaphore_list *	file:
 list1	src/superops/hash.h	/^  KeywordExt_List* list1;$/;"	m	class:hash_builder	typeref:typename:KeywordExt_List *
 list1	src/util/superops/hash.h	/^  KeywordExt_List* list1;$/;"	m	class:hash_builder	typeref:typename:KeywordExt_List *
 list2	src/superops/hash.h	/^  KeywordExt_List* list2;$/;"	m	class:hash_builder	typeref:typename:KeywordExt_List *
@@ -10641,10 +10481,6 @@ mark_semaphore_oops	build/src/libgst/interp.c	/^mark_semaphore_oops (void)$/;"	f
 mark_semaphore_oops	src/libgst/interp.c	/^mark_semaphore_oops (void)$/;"	f	typeref:typename:void
 marli	build/src/libgst/cint.c	/^marli (int n)$/;"	f	typeref:typename:void
 marli	src/libgst/cint.c	/^marli (int n)$/;"	f	typeref:typename:void
-mask	build/src/libgst/sysdep/win32/events.c	/^  int mask;$/;"	m	struct:semaphore_list	typeref:typename:int	file:
-mask	src/libgst/sysdep/win32/events.c	/^  int mask;$/;"	m	struct:semaphore_list	typeref:typename:int	file:
-masks	build/src/libgst/sysdep/win32/events.c	/^static const LONG masks[3] = {$/;"	v	typeref:typename:const LONG[3]	file:
-masks	src/libgst/sysdep/win32/events.c	/^static const LONG masks[3] = {$/;"	v	typeref:typename:const LONG[3]	file:
 matchOOP	build/src/libgst/re.c	/^  OOP matchOOP;$/;"	m	struct:_gst_registers	typeref:typename:OOP	file:
 matchOOP	src/libgst/re.c	/^  OOP matchOOP;$/;"	m	struct:_gst_registers	typeref:typename:OOP	file:
 matched_something	build/src/libaux/regex.h	/^    unsigned matched_something : 1;$/;"	m	struct:__anon6e7e1540010a::__anon6e7e15400208	typeref:typename:unsigned:1
@@ -10832,8 +10668,6 @@ mst_Object	build/src/libgst/gst.h	/^typedef struct object_s *gst_object, *mst_Ob
 mst_Object	src/libgst/gst.h	/^typedef struct object_s *gst_object, *mst_Object;$/;"	t	typeref:struct:object_s *
 mul_with_check	build/src/libgst/interp.inl	/^mul_with_check (OOP op1, OOP op2, mst_Boolean *overflow)$/;"	f	typeref:typename:OOP
 mul_with_check	src/libgst/interp.inl	/^mul_with_check (OOP op1, OOP op2, mst_Boolean *overflow)$/;"	f	typeref:typename:OOP
-muldiv64	build/src/libgst/sysdep/win32/time.c	/^static inline uint64_t muldiv64(uint64_t a, uint32_t b, uint32_t c)$/;"	f	typeref:typename:uint64_t	file:
-muldiv64	src/libgst/sysdep/win32/time.c	/^static inline uint64_t muldiv64(uint64_t a, uint32_t b, uint32_t c)$/;"	f	typeref:typename:uint64_t	file:
 must	build/src/libaux/regex.h	/^    char *must;	        \/* Pointer to exact pattern which strings should have$/;"	m	struct:pre_pattern_buffer	typeref:typename:char *
 must	src/libaux/regex.h	/^    char *must;	        \/* Pointer to exact pattern which strings should have$/;"	m	struct:pre_pattern_buffer	typeref:typename:char *
 must_skip	build/src/libaux/regex.h	/^    int *must_skip;     \/* Pointer to exact pattern skip table for bm_search *\/$/;"	m	struct:pre_pattern_buffer	typeref:typename:int *
@@ -11029,8 +10863,6 @@ next	build/src/libgst/opt.c	/^  struct basic_block_item *next;$/;"	m	struct:basi
 next	build/src/libgst/opt.c	/^  struct partially_constructed_array *next;$/;"	m	struct:partially_constructed_array	typeref:struct:partially_constructed_array *	file:
 next	build/src/libgst/sym.c	/^  pool_list next;$/;"	m	struct:pool_list	typeref:typename:pool_list	file:
 next	build/src/libgst/sysdep/posix/events.c	/^  struct polling_queue *next;$/;"	m	struct:polling_queue	typeref:struct:polling_queue *	file:
-next	build/src/libgst/sysdep/win32/events.c	/^  struct handle_events *next;$/;"	m	struct:handle_events	typeref:struct:handle_events *	file:
-next	build/src/libgst/sysdep/win32/events.c	/^  struct semaphore_list *next;$/;"	m	struct:semaphore_list	typeref:struct:semaphore_list *	file:
 next	build/src/libgst/tree.h	/^  tree_node next;$/;"	m	struct:list_node	typeref:typename:tree_node
 next	build/src/libgst/xlat.c	/^  struct code_tree *child, *next;$/;"	m	struct:code_tree	typeref:struct:code_tree *	file:
 next	build/src/libgst/xlat.c	/^  struct deferred_send *next;$/;"	m	struct:deferred_send	typeref:struct:deferred_send *	file:
@@ -11054,8 +10886,6 @@ next	src/libgst/opt.c	/^  struct basic_block_item *next;$/;"	m	struct:basic_bloc
 next	src/libgst/opt.c	/^  struct partially_constructed_array *next;$/;"	m	struct:partially_constructed_array	typeref:struct:partially_constructed_array *	file:
 next	src/libgst/sym.c	/^  pool_list next;$/;"	m	struct:pool_list	typeref:typename:pool_list	file:
 next	src/libgst/sysdep/posix/events.c	/^  struct polling_queue *next;$/;"	m	struct:polling_queue	typeref:struct:polling_queue *	file:
-next	src/libgst/sysdep/win32/events.c	/^  struct handle_events *next;$/;"	m	struct:handle_events	typeref:struct:handle_events *	file:
-next	src/libgst/sysdep/win32/events.c	/^  struct semaphore_list *next;$/;"	m	struct:semaphore_list	typeref:struct:semaphore_list *	file:
 next	src/libgst/tree.h	/^  tree_node next;$/;"	m	struct:list_node	typeref:typename:tree_node
 next	src/libgst/xlat.c	/^  struct code_tree *child, *next;$/;"	m	struct:code_tree	typeref:struct:code_tree *	file:
 next	src/libgst/xlat.c	/^  struct deferred_send *next;$/;"	m	struct:deferred_send	typeref:struct:deferred_send *	file:
@@ -11616,8 +11446,8 @@ parenthesis_depth	build/src/libgst/lex.c	/^static int parenthesis_depth;$/;"	v	t
 parenthesis_depth	src/libgst/lex.c	/^static int parenthesis_depth;$/;"	v	typeref:typename:int	file:
 parse_and_send_attribute	build/src/libgst/gst-parse.c	/^parse_and_send_attribute (gst_parser *p, OOP receiverOOP, mst_Boolean forClass)$/;"	f	typeref:typename:void	file:
 parse_and_send_attribute	src/libgst/gst-parse.c	/^parse_and_send_attribute (gst_parser *p, OOP receiverOOP, mst_Boolean forClass)$/;"	f	typeref:typename:void	file:
-parse_args	build/src/apps/main.c	/^parse_args (int argc,$/;"	f	typeref:typename:void
-parse_args	src/apps/main.c	/^parse_args (int argc,$/;"	f	typeref:typename:void
+parse_args	build/src/apps/main.c	/^parse_args (int argc, const char **argv)$/;"	f	typeref:typename:void
+parse_args	src/apps/main.c	/^parse_args (int argc, const char **argv)$/;"	f	typeref:typename:void
 parse_array_constructor	build/src/libgst/gst-parse.c	/^parse_array_constructor (gst_parser *p)$/;"	f	typeref:typename:tree_node	file:
 parse_array_constructor	src/libgst/gst-parse.c	/^parse_array_constructor (gst_parser *p)$/;"	f	typeref:typename:tree_node	file:
 parse_array_literal	build/src/libgst/gst-parse.c	/^parse_array_literal (gst_parser *p)$/;"	f	typeref:typename:tree_node	file:
@@ -11745,8 +11575,6 @@ pdfdir	src/libgst/Makefile.in	/^pdfdir = @pdfdir@$/;"	m
 peek	build/src/libgst/dict.h	/^  OOP peek;$/;"	m	struct:gst_file_stream	typeref:typename:OOP
 peek	src/libgst/dict.h	/^  OOP peek;$/;"	m	struct:gst_file_stream	typeref:typename:OOP
 peek;               \t\t\tNULL	src/libgst/builtins.gperf	/^peek;               			NULL, 0,       143$/;"	k
-pending_sigs	build/src/libgst/sysdep/win32/signals.c	/^static long pending_sigs = 0;$/;"	v	typeref:typename:long	file:
-pending_sigs	src/libgst/sysdep/win32/signals.c	/^static long pending_sigs = 0;$/;"	v	typeref:typename:long	file:
 perform	build/src/libgst/gstpub.h	/^  OOP (*perform) (OOP oop,$/;"	m	struct:VMProxy	typeref:typename:OOP (*)(OOP oop,OOP selector)
 perform	src/libgst/gstpub.h	/^  OOP (*perform) (OOP oop,$/;"	m	struct:VMProxy	typeref:typename:OOP (*)(OOP oop,OOP selector)
 perform:;           \t\t\tNULL	src/libgst/builtins.gperf	/^perform:;           			NULL, 1,       208$/;"	k
@@ -11794,8 +11622,6 @@ poll	build/src/libgst/sysdep/posix/events.c	/^  int poll;$/;"	m	struct:polling_q
 poll	src/libgst/sysdep/posix/events.c	/^  int poll;$/;"	m	struct:polling_queue	typeref:typename:int	file:
 poll_and_read	build/src/libgst/input.c	/^poll_and_read (int fd, char *buf, int n)$/;"	f	typeref:typename:int
 poll_and_read	src/libgst/input.c	/^poll_and_read (int fd, char *buf, int n)$/;"	f	typeref:typename:int
-poll_console_input	build/src/libgst/sysdep/win32/events.c	/^poll_console_input (HANDLE fh)$/;"	f	typeref:typename:int	file:
-poll_console_input	src/libgst/sysdep/win32/events.c	/^poll_console_input (HANDLE fh)$/;"	f	typeref:typename:int	file:
 poll_events	build/src/libgst/events.c	/^poll_events (OOP blockingOOP)$/;"	f	typeref:typename:void	file:
 poll_events	src/libgst/events.c	/^poll_events (OOP blockingOOP)$/;"	f	typeref:typename:void	file:
 poll_timer_thread	build/src/libgst/events.c	/^poll_timer_thread (void *unused)$/;"	f	typeref:typename:unsigned __stdcall	file:
@@ -11806,8 +11632,6 @@ polling_queue	build/src/libgst/sysdep/posix/events.c	/^polling_queue;$/;"	t	type
 polling_queue	build/src/libgst/sysdep/posix/events.c	/^typedef struct polling_queue$/;"	s	file:
 polling_queue	src/libgst/sysdep/posix/events.c	/^polling_queue;$/;"	t	typeref:struct:polling_queue	file:
 polling_queue	src/libgst/sysdep/posix/events.c	/^typedef struct polling_queue$/;"	s	file:
-polling_thread	build/src/libgst/sysdep/win32/events.c	/^polling_thread (LPVOID unused)$/;"	f	typeref:typename:unsigned WINAPI	file:
-polling_thread	src/libgst/sysdep/win32/events.c	/^polling_thread (LPVOID unused)$/;"	f	typeref:typename:unsigned WINAPI	file:
 pool	src/libgst/genvm-parse.c	/^  id_list *pool;$/;"	m	struct:table_info	typeref:typename:id_list *	file:
 poolOOP	build/src/libgst/sym.c	/^  OOP poolOOP;$/;"	m	struct:pool_list	typeref:typename:OOP	file:
 poolOOP	src/libgst/sym.c	/^  OOP poolOOP;$/;"	m	struct:pool_list	typeref:typename:OOP	file:
@@ -12238,8 +12062,6 @@ recover_error	build/src/libgst/gst-parse.c	/^recover_error (gst_parser *p)$/;"	f
 recover_error	src/libgst/gst-parse.c	/^recover_error (gst_parser *p)$/;"	f	typeref:typename:void	file:
 reentrancy_jmp_buf	build/src/libgst/interp.c	/^static interp_jmp_buf *reentrancy_jmp_buf = NULL;$/;"	v	typeref:typename:interp_jmp_buf *	file:
 reentrancy_jmp_buf	src/libgst/interp.c	/^static interp_jmp_buf *reentrancy_jmp_buf = NULL;$/;"	v	typeref:typename:interp_jmp_buf *	file:
-refcount	build/src/libgst/sysdep/win32/events.c	/^  volatile LONG refcount;$/;"	m	struct:handle_events	typeref:typename:volatile LONG	file:
-refcount	src/libgst/sysdep/win32/events.c	/^  volatile LONG refcount;$/;"	m	struct:handle_events	typeref:typename:volatile LONG	file:
 refill_stream	build/src/libgst/input.c	/^refill_stream (input_stream stream, char *buf, int new_line)$/;"	f	typeref:typename:void
 refill_stream	src/libgst/input.c	/^refill_stream (input_stream stream, char *buf, int new_line)$/;"	f	typeref:typename:void
 refresh_native_ips	build/src/libgst/interp-jit.inl	/^refresh_native_ips (OOP contextOOP)$/;"	f	typeref:typename:void
@@ -12387,8 +12209,6 @@ save_object	build/src/libgst/save.c	/^save_object (int imageFd,$/;"	f	typeref:ty
 save_object	src/libgst/save.c	/^save_object (int imageFd,$/;"	f	typeref:typename:void
 save_to_fd	build/src/libgst/save.c	/^save_to_fd (int imageFd)$/;"	f	typeref:typename:void
 save_to_fd	src/libgst/save.c	/^save_to_fd (int imageFd)$/;"	f	typeref:typename:void
-saved_handlers	build/src/libgst/sysdep/win32/signals.c	/^static SigHandler saved_handlers[NSIG];$/;"	v	typeref:typename:SigHandler[]	file:
-saved_handlers	src/libgst/sysdep/win32/signals.c	/^static SigHandler saved_handlers[NSIG];$/;"	v	typeref:typename:SigHandler[]	file:
 saved_search_path	build/src/libgst/cint.c	/^  char *saved_search_path;$/;"	m	struct:search_path_stack	typeref:typename:char *	file:
 saved_search_path	src/libgst/cint.c	/^  char *saved_search_path;$/;"	m	struct:search_path_stack	typeref:typename:char *	file:
 sbindir	src/libgst/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
@@ -12516,15 +12336,7 @@ self_class_check	src/libgst/xlat.c	/^static int sp_delta, self_class_check, stac
 semaphoreClass	build/src/libgst/gstpub.h	/^    fileDescriptorClass, fileStreamClass, processClass, semaphoreClass,$/;"	m	struct:VMProxy	typeref:typename:OOP
 semaphoreClass	src/libgst/gstpub.h	/^    fileDescriptorClass, fileStreamClass, processClass, semaphoreClass,$/;"	m	struct:VMProxy	typeref:typename:OOP
 semaphoreOOP	build/src/libgst/sysdep/posix/events.c	/^  OOP semaphoreOOP;$/;"	m	struct:polling_queue	typeref:typename:OOP	file:
-semaphoreOOP	build/src/libgst/sysdep/win32/events.c	/^  OOP semaphoreOOP;$/;"	m	struct:handle_events	typeref:typename:OOP	file:
-semaphoreOOP	build/src/libgst/sysdep/win32/events.c	/^  OOP semaphoreOOP;$/;"	m	struct:semaphore_list	typeref:typename:OOP	file:
 semaphoreOOP	src/libgst/sysdep/posix/events.c	/^  OOP semaphoreOOP;$/;"	m	struct:polling_queue	typeref:typename:OOP	file:
-semaphoreOOP	src/libgst/sysdep/win32/events.c	/^  OOP semaphoreOOP;$/;"	m	struct:handle_events	typeref:typename:OOP	file:
-semaphoreOOP	src/libgst/sysdep/win32/events.c	/^  OOP semaphoreOOP;$/;"	m	struct:semaphore_list	typeref:typename:OOP	file:
-semaphore_list	build/src/libgst/sysdep/win32/events.c	/^semaphore_list;$/;"	t	typeref:struct:semaphore_list	file:
-semaphore_list	build/src/libgst/sysdep/win32/events.c	/^typedef struct semaphore_list$/;"	s	file:
-semaphore_list	src/libgst/sysdep/win32/events.c	/^semaphore_list;$/;"	t	typeref:struct:semaphore_list	file:
-semaphore_list	src/libgst/sysdep/win32/events.c	/^typedef struct semaphore_list$/;"	s	file:
 semaphore_new	build/src/libgst/interp.c	/^semaphore_new (int signals)$/;"	f	typeref:typename:OOP
 semaphore_new	src/libgst/interp.c	/^semaphore_new (int signals)$/;"	f	typeref:typename:OOP
 send_block_value	build/src/libgst/interp-bc.inl	/^send_block_value (int numArgs, int cull_up_to)$/;"	f	typeref:typename:mst_Boolean	file:
@@ -12609,8 +12421,6 @@ signal_handler	build/src/libgst/events.c	/^signal_handler (int sig)$/;"	f	typere
 signal_handler	src/libgst/events.c	/^signal_handler (int sig)$/;"	f	typeref:typename:RETSIGTYPE
 signal_polled_files	build/src/libgst/sysdep/posix/events.c	/^signal_polled_files (int fd, mst_Boolean try_again)$/;"	f	typeref:typename:void	file:
 signal_polled_files	src/libgst/sysdep/posix/events.c	/^signal_polled_files (int fd, mst_Boolean try_again)$/;"	f	typeref:typename:void	file:
-signal_semaphores	build/src/libgst/sysdep/win32/events.c	/^signal_semaphores (struct handle_events *ev, LONG lEvents)$/;"	f	typeref:typename:void	file:
-signal_semaphores	src/libgst/sysdep/win32/events.c	/^signal_semaphores (struct handle_events *ev, LONG lEvents)$/;"	f	typeref:typename:void	file:
 signals	build/src/libgst/interp.h	/^  OOP signals;$/;"	m	struct:gst_semaphore	typeref:typename:OOP
 signals	src/libgst/interp.h	/^  OOP signals;$/;"	m	struct:gst_semaphore	typeref:typename:OOP
 signature	build/src/libgst/save.c	/^  char signature[6];	\/* 6+2=8 should be enough to align version! *\/$/;"	m	struct:save_file_header	typeref:typename:char[6]	file:
@@ -12649,10 +12459,6 @@ size_factor	src/util/superops/hash-table.cc	/^static const int size_factor = 10;
 sizeof;             \t\t\tNULL	src/libgst/builtins.gperf	/^sizeof;             			NULL, 0,       153$/;"	k
 skip:;              \t\t\tNULL	src/libgst/builtins.gperf	/^skip:;              			NULL, 1,       238$/;"	k
 skipSeparators;     \t\t\tNULL	src/libgst/builtins.gperf	/^skipSeparators;     			NULL, 0,       232$/;"	k
-sleepTime	build/src/libgst/sysdep/cygwin/timer.c	/^  long sleepTime;$/;"	m	struct:__anon818e52280108	typeref:typename:long	file:
-sleepTime	build/src/libgst/sysdep/win32/events.c	/^static long sleepTime;$/;"	v	typeref:typename:long	file:
-sleepTime	src/libgst/sysdep/cygwin/timer.c	/^  long sleepTime;$/;"	m	struct:__anon1d8279890108	typeref:typename:long	file:
-sleepTime	src/libgst/sysdep/win32/events.c	/^static long sleepTime;$/;"	v	typeref:typename:long	file:
 sleep_process	build/src/libgst/interp.c	/^sleep_process (OOP processOOP)$/;"	f	typeref:typename:void
 sleep_process	src/libgst/interp.c	/^sleep_process (OOP processOOP)$/;"	f	typeref:typename:void
 slots	build/src/libaux/pointer-set.c	/^  const void **slots;$/;"	m	struct:pointer_set_t	typeref:typename:const void **	file:

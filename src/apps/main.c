@@ -60,6 +60,7 @@
 
 #include "config.h"
 #include "gstpub.h"
+#include "log.h"
 
 static const char help_text[] =
 "GNU Smalltalk usage:"
@@ -333,6 +334,8 @@ parse_args (int argc, const char **argv)
 int
 main(int argc, const char **argv)
 {
+    log_trace("Hello %s", "GNU Smalltalk For Mac");
+
     int result;
     struct loaded_file *file;
 

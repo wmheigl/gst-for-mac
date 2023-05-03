@@ -8,6 +8,8 @@ to the program 'gst'.
 
 Command line option parsing via getopt.h provided by MacOS SDK.
 
+Call `gst_set_executable_path()`
+
 There is an undocumented option '-psn' if __APPLE__ is defined.
 
 Check for environmental variables `SMALLTALK_KERNEL` and `SMALTALK_IMAGE` (deprecated).
